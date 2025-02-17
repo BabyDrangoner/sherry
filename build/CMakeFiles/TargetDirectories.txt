@@ -1,0 +1,11 @@
+/home/xxl/sherry/build/CMakeFiles/sherry.dir
+/home/xxl/sherry/build/CMakeFiles/test.dir
+/home/xxl/sherry/build/CMakeFiles/rebuild_cache.dir
+/home/xxl/sherry/build/CMakeFiles/test_thread.dir
+/home/xxl/sherry/build/CMakeFiles/test_util.dir
+/home/xxl/sherry/build/CMakeFiles/test_config.dir
+/home/xxl/sherry/build/CMakeFiles/test_hook.dir
+/home/xxl/sherry/build/CMakeFiles/test_fiber.dir
+/home/xxl/sherry/build/CMakeFiles/test_scheduler.dir
+/home/xxl/sherry/build/CMakeFiles/test_iomanager.dir
+/home/xxl/sherry/build/CMakeFiles/edit_cache.dir

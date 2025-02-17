@@ -1,0 +1,3 @@
+2025-02-08 21:49:26	INFO	test macro
+2025-02-08 21:49:34	ERROR	test macro error
+2025-02-08 21:49:34	ERROR	test macro fmt error aa
