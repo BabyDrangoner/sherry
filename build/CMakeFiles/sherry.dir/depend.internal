@@ -5,26 +5,42 @@ CMakeFiles/sherry.dir/sherry/config.cc.o
  /home/xxl/sherry/sherry/config.cc
  /home/xxl/sherry/sherry/config.h
  /home/xxl/sherry/sherry/log.h
+ /home/xxl/sherry/sherry/noncopyable.h
  /home/xxl/sherry/sherry/singleton.h
  /home/xxl/sherry/sherry/thread.h
  /home/xxl/sherry/sherry/util.h
+CMakeFiles/sherry.dir/sherry/fd_manager.cc.o
+ /home/xxl/sherry/sherry/fd_manager.cc
+ /home/xxl/sherry/sherry/fd_manager.h
+ /home/xxl/sherry/sherry/fiber.h
+ /home/xxl/sherry/sherry/hook.h
+ /home/xxl/sherry/sherry/iomanager.h
+ /home/xxl/sherry/sherry/noncopyable.h
+ /home/xxl/sherry/sherry/scheduler.h
+ /home/xxl/sherry/sherry/singleton.h
+ /home/xxl/sherry/sherry/thread.h
+ /home/xxl/sherry/sherry/timer.h
 CMakeFiles/sherry.dir/sherry/fiber.cc.o
  /home/xxl/sherry/sherry/config.h
  /home/xxl/sherry/sherry/fiber.cc
  /home/xxl/sherry/sherry/fiber.h
  /home/xxl/sherry/sherry/log.h
  /home/xxl/sherry/sherry/macro.h
+ /home/xxl/sherry/sherry/noncopyable.h
  /home/xxl/sherry/sherry/scheduler.h
  /home/xxl/sherry/sherry/singleton.h
  /home/xxl/sherry/sherry/thread.h
  /home/xxl/sherry/sherry/util.h
 CMakeFiles/sherry.dir/sherry/hook.cc.o
+ /home/xxl/sherry/sherry/config.h
+ /home/xxl/sherry/sherry/fd_manager.h
  /home/xxl/sherry/sherry/fiber.h
  /home/xxl/sherry/sherry/hook.cc
  /home/xxl/sherry/sherry/hook.h
  /home/xxl/sherry/sherry/iomanager.h
  /home/xxl/sherry/sherry/log.h
  /home/xxl/sherry/sherry/macro.h
+ /home/xxl/sherry/sherry/noncopyable.h
  /home/xxl/sherry/sherry/scheduler.h
  /home/xxl/sherry/sherry/singleton.h
  /home/xxl/sherry/sherry/thread.h
@@ -36,6 +52,7 @@ CMakeFiles/sherry.dir/sherry/iomanager.cc.o
  /home/xxl/sherry/sherry/iomanager.h
  /home/xxl/sherry/sherry/log.h
  /home/xxl/sherry/sherry/macro.h
+ /home/xxl/sherry/sherry/noncopyable.h
  /home/xxl/sherry/sherry/scheduler.h
  /home/xxl/sherry/sherry/singleton.h
  /home/xxl/sherry/sherry/thread.h
@@ -45,6 +62,7 @@ CMakeFiles/sherry.dir/sherry/log.cc.o
  /home/xxl/sherry/sherry/config.h
  /home/xxl/sherry/sherry/log.cc
  /home/xxl/sherry/sherry/log.h
+ /home/xxl/sherry/sherry/noncopyable.h
  /home/xxl/sherry/sherry/singleton.h
  /home/xxl/sherry/sherry/thread.h
  /home/xxl/sherry/sherry/util.h
@@ -53,6 +71,7 @@ CMakeFiles/sherry.dir/sherry/scheduler.cc.o
  /home/xxl/sherry/sherry/hook.h
  /home/xxl/sherry/sherry/log.h
  /home/xxl/sherry/sherry/macro.h
+ /home/xxl/sherry/sherry/noncopyable.h
  /home/xxl/sherry/sherry/scheduler.cc
  /home/xxl/sherry/sherry/scheduler.h
  /home/xxl/sherry/sherry/singleton.h
@@ -60,11 +79,13 @@ CMakeFiles/sherry.dir/sherry/scheduler.cc.o
  /home/xxl/sherry/sherry/util.h
 CMakeFiles/sherry.dir/sherry/thread.cc.o
  /home/xxl/sherry/sherry/log.h
+ /home/xxl/sherry/sherry/noncopyable.h
  /home/xxl/sherry/sherry/singleton.h
  /home/xxl/sherry/sherry/thread.cc
  /home/xxl/sherry/sherry/thread.h
  /home/xxl/sherry/sherry/util.h
 CMakeFiles/sherry.dir/sherry/timer.cc.o
+ /home/xxl/sherry/sherry/noncopyable.h
  /home/xxl/sherry/sherry/thread.h
  /home/xxl/sherry/sherry/timer.cc
  /home/xxl/sherry/sherry/timer.h
@@ -72,6 +93,7 @@ CMakeFiles/sherry.dir/sherry/timer.cc.o
 CMakeFiles/sherry.dir/sherry/util.cc.o
  /home/xxl/sherry/sherry/fiber.h
  /home/xxl/sherry/sherry/log.h
+ /home/xxl/sherry/sherry/noncopyable.h
  /home/xxl/sherry/sherry/singleton.h
  /home/xxl/sherry/sherry/thread.h
  /home/xxl/sherry/sherry/util.cc

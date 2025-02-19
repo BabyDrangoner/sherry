@@ -32,6 +32,8 @@ singleton.h
 thread.h
 /home/xxl/sherry/sherry/thread.h
 
+/home/xxl/sherry/sherry/noncopyable.h
+
 /home/xxl/sherry/sherry/singleton.h
 
 /home/xxl/sherry/sherry/thread.h
@@ -49,6 +51,8 @@ stdint.h
 -
 atomic
 -
+noncopyable.h
+/home/xxl/sherry/sherry/noncopyable.h
 
 /home/xxl/sherry/sherry/util.h
 pthread.h

@@ -120,13 +120,13 @@ uint64_t TimerManager::getNextTimer(){
     RWMutexType::ReadLock lock(m_mutex);
     m_tickled = false;
     if(m_timers.empty()){
-        return ~0ull;
+        return ~0ull;        // 64位最大值，表示没有定时器
     } 
     
     const Timer::ptr & next = *m_timers.begin();
     uint64_t now_ms = sherry::GetCurrentMS();
     if(now_ms >= next->m_next){
-        return 0;
+        return 0;             // 下一个定时器已经过期
     } else {
         return next->m_next - now_ms;
     }
@@ -175,15 +175,15 @@ void TimerManager::addTimer(Timer::ptr val, RWMutexType::WriteLock & lock){
     if(at_front){
         m_tickled = true;
     }
-    
 
     if(at_front){
         onTimerInsertedAtFront();
     }
 }
-
+// 检测时钟是否回拨
 bool TimerManager::detectClockRollover(uint64_t now_ms){
     bool rollover = false;
+    // 当前时间小于上一次记录的时间 && 当前时间相比较上一次的时间少了一个小时以上
     if(now_ms < m_previouseTime && now_ms < (m_previouseTime - 60 * 60 * 1000)){
         rollover = true;
     }

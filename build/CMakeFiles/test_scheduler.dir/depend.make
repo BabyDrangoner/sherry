@@ -5,6 +5,7 @@ CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: ../sherry/config.h
 CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: ../sherry/fiber.h
 CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: ../sherry/log.h
 CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: ../sherry/macro.h
+CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: ../sherry/noncopyable.h
 CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: ../sherry/scheduler.h
 CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: ../sherry/sherry.h
 CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: ../sherry/singleton.h

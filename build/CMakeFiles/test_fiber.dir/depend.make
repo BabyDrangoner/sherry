@@ -5,6 +5,7 @@ CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: .././sherry/config.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: .././sherry/fiber.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: .././sherry/log.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: .././sherry/macro.h
+CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: .././sherry/noncopyable.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: .././sherry/scheduler.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: .././sherry/sherry.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: .././sherry/singleton.h

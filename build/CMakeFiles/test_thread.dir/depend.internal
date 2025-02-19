@@ -6,6 +6,7 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o
  .././sherry/fiber.h
  .././sherry/log.h
  .././sherry/macro.h
+ .././sherry/noncopyable.h
  .././sherry/scheduler.h
  .././sherry/sherry.h
  .././sherry/singleton.h

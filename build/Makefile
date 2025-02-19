@@ -257,6 +257,33 @@ sherry/config.cc.s:
 	$(MAKE) -f CMakeFiles/sherry.dir/build.make CMakeFiles/sherry.dir/sherry/config.cc.s
 .PHONY : sherry/config.cc.s
 
+sherry/fd_manager.o: sherry/fd_manager.cc.o
+
+.PHONY : sherry/fd_manager.o
+
+# target to build an object file
+sherry/fd_manager.cc.o:
+	$(MAKE) -f CMakeFiles/sherry.dir/build.make CMakeFiles/sherry.dir/sherry/fd_manager.cc.o
+.PHONY : sherry/fd_manager.cc.o
+
+sherry/fd_manager.i: sherry/fd_manager.cc.i
+
+.PHONY : sherry/fd_manager.i
+
+# target to preprocess a source file
+sherry/fd_manager.cc.i:
+	$(MAKE) -f CMakeFiles/sherry.dir/build.make CMakeFiles/sherry.dir/sherry/fd_manager.cc.i
+.PHONY : sherry/fd_manager.cc.i
+
+sherry/fd_manager.s: sherry/fd_manager.cc.s
+
+.PHONY : sherry/fd_manager.s
+
+# target to generate assembly for a file
+sherry/fd_manager.cc.s:
+	$(MAKE) -f CMakeFiles/sherry.dir/build.make CMakeFiles/sherry.dir/sherry/fd_manager.cc.s
+.PHONY : sherry/fd_manager.cc.s
+
 sherry/fiber.o: sherry/fiber.cc.o
 
 .PHONY : sherry/fiber.o
@@ -709,6 +736,9 @@ help:
 	@echo "... sherry/config.o"
 	@echo "... sherry/config.i"
 	@echo "... sherry/config.s"
+	@echo "... sherry/fd_manager.o"
+	@echo "... sherry/fd_manager.i"
+	@echo "... sherry/fd_manager.s"
 	@echo "... sherry/fiber.o"
 	@echo "... sherry/fiber.i"
 	@echo "... sherry/fiber.s"

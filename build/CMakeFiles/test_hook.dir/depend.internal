@@ -6,6 +6,7 @@ CMakeFiles/test_hook.dir/tests/test_hook.cc.o
  /home/xxl/sherry/sherry/hook.h
  /home/xxl/sherry/sherry/iomanager.h
  /home/xxl/sherry/sherry/log.h
+ /home/xxl/sherry/sherry/noncopyable.h
  /home/xxl/sherry/sherry/scheduler.h
  /home/xxl/sherry/sherry/singleton.h
  /home/xxl/sherry/sherry/thread.h

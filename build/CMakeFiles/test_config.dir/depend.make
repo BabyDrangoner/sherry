@@ -3,6 +3,7 @@
 
 CMakeFiles/test_config.dir/tests/test_config.cc.o: .././sherry/config.h
 CMakeFiles/test_config.dir/tests/test_config.cc.o: .././sherry/log.h
+CMakeFiles/test_config.dir/tests/test_config.cc.o: .././sherry/noncopyable.h
 CMakeFiles/test_config.dir/tests/test_config.cc.o: .././sherry/singleton.h
 CMakeFiles/test_config.dir/tests/test_config.cc.o: .././sherry/thread.h
 CMakeFiles/test_config.dir/tests/test_config.cc.o: .././sherry/util.h

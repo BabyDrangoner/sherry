@@ -14,6 +14,7 @@ find_library(YAMLCPP libyaml-cpp.a)
 
 set(LIB_SRC
     sherry/log.cc
+    sherry/fd_manager.cc
     sherry/fiber.cc
     sherry/util.cc
     sherry/hook.cc

@@ -17,6 +17,18 @@ thread.h
 /home/xxl/sherry/sherry/thread.h
 
 /home/xxl/sherry/sherry/hook.h
+fcntl.h
+-
+sys/ioctl.h
+-
+sys/types.h
+-
+sys/socket.h
+-
+stdint.h
+-
+time.h
+-
 unistd.h
 -
 
@@ -52,6 +64,8 @@ singleton.h
 thread.h
 /home/xxl/sherry/sherry/thread.h
 
+/home/xxl/sherry/sherry/noncopyable.h
+
 /home/xxl/sherry/sherry/scheduler.h
 vector
 -
@@ -81,6 +95,8 @@ stdint.h
 -
 atomic
 -
+noncopyable.h
+/home/xxl/sherry/sherry/noncopyable.h
 
 /home/xxl/sherry/sherry/timer.h
 memory.h
@@ -117,4 +133,14 @@ string
 /home/xxl/sherry/sherry/iomanager.h
 ../sherry/log.h
 /home/xxl/sherry/sherry/log.h
+sys/socket.h
+-
+unistd.h
+-
+sys/types.h
+-
+arpa/inet.h
+-
+string.h
+-
 

@@ -76,6 +76,8 @@ util.h
 log.h
 .././sherry/log.h
 
+.././sherry/noncopyable.h
+
 .././sherry/scheduler.h
 vector
 -
@@ -123,6 +125,8 @@ stdint.h
 -
 atomic
 -
+noncopyable.h
+.././sherry/noncopyable.h
 
 .././sherry/util.h
 pthread.h

@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/xxl/sherry/sherry/config.cc" "/home/xxl/sherry/build/CMakeFiles/sherry.dir/sherry/config.cc.o"
+  "/home/xxl/sherry/sherry/fd_manager.cc" "/home/xxl/sherry/build/CMakeFiles/sherry.dir/sherry/fd_manager.cc.o"
   "/home/xxl/sherry/sherry/fiber.cc" "/home/xxl/sherry/build/CMakeFiles/sherry.dir/sherry/fiber.cc.o"
   "/home/xxl/sherry/sherry/hook.cc" "/home/xxl/sherry/build/CMakeFiles/sherry.dir/sherry/hook.cc.o"
   "/home/xxl/sherry/sherry/iomanager.cc" "/home/xxl/sherry/build/CMakeFiles/sherry.dir/sherry/iomanager.cc.o"
