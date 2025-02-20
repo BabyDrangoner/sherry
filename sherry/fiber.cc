@@ -72,8 +72,6 @@ Fiber::Fiber(std::function<void()> cb, size_t stacksize, bool use_caller)  //
             makecontext(&m_ctx, &Fiber::CallerMainFunc, 0);
         }
 
-
-
         SYLAR_LOG_DEBUG(g_logger) << "Fiber::Fiber id=" << m_id;
 }
 
