@@ -29,21 +29,26 @@ bool FdCtx::init(){
     m_sendTimeout = -1;
 
     struct stat fd_stat;
-    if(-1 == fstat(m_fd, &fd_stat)){
+    if(-1 == fstat(m_fd, &fd_stat)){  // fdstat会将fd的信息存储在fd_stat中
         m_isInit = false;
         m_isSocket = false;
     } else {
         m_isInit = true;
+        // 判断是否是套接字
         m_isSocket = S_ISSOCK(fd_stat.st_mode);
     }
 
     if(m_isSocket){
+        // 获取fd的属性
         int flags = fcntl_f(m_fd, F_GETFL, 0);
+        // 如果fd是阻塞的
         if(!(flags & O_NONBLOCK)){
+            // 设置为非阻塞 
             fcntl_f(m_fd, F_SETFL, flags | O_NONBLOCK);
         }
+        // 设置系统层面非阻塞
         m_sysNonblock = true;
-    } else {
+    } else { 
         m_sysNonblock = false;
     }
     m_userNonblock = false;
