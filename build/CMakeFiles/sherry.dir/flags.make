@@ -22,6 +22,8 @@ CXX_INCLUDES = -I/home/xxl/sherry/. -I/build/yaml-cpp-0.8.0/include
 
 # Custom defines: CMakeFiles/sherry.dir/sherry/scheduler.cc.o_DEFINES = __FILE__="sherry/scheduler.cc"
 
+# Custom defines: CMakeFiles/sherry.dir/sherry/socket.cc.o_DEFINES = __FILE__="sherry/socket.cc"
+
 # Custom defines: CMakeFiles/sherry.dir/sherry/timer.cc.o_DEFINES = __FILE__="sherry/timer.cc"
 
 # Custom defines: CMakeFiles/sherry.dir/sherry/config.cc.o_DEFINES = __FILE__="sherry/config.cc"

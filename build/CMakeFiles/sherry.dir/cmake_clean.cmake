@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/sherry.dir/sherry/util.cc.o"
   "CMakeFiles/sherry.dir/sherry/hook.cc.o"
   "CMakeFiles/sherry.dir/sherry/scheduler.cc.o"
+  "CMakeFiles/sherry.dir/sherry/socket.cc.o"
   "CMakeFiles/sherry.dir/sherry/timer.cc.o"
   "CMakeFiles/sherry.dir/sherry/config.cc.o"
   "CMakeFiles/sherry.dir/sherry/thread.cc.o"

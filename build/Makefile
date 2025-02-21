@@ -140,6 +140,19 @@ test/fast:
 .PHONY : test/fast
 
 #=============================================================================
+# Target rules for targets named test_socket
+
+# Build rule for target.
+test_socket: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_socket
+.PHONY : test_socket
+
+# fast build rule for target.
+test_socket/fast:
+	$(MAKE) -f CMakeFiles/test_socket.dir/build.make CMakeFiles/test_socket.dir/build
+.PHONY : test_socket/fast
+
+#=============================================================================
 # Target rules for targets named test_thread
 
 # Build rule for target.
@@ -459,6 +472,33 @@ sherry/scheduler.cc.s:
 	$(MAKE) -f CMakeFiles/sherry.dir/build.make CMakeFiles/sherry.dir/sherry/scheduler.cc.s
 .PHONY : sherry/scheduler.cc.s
 
+sherry/socket.o: sherry/socket.cc.o
+
+.PHONY : sherry/socket.o
+
+# target to build an object file
+sherry/socket.cc.o:
+	$(MAKE) -f CMakeFiles/sherry.dir/build.make CMakeFiles/sherry.dir/sherry/socket.cc.o
+.PHONY : sherry/socket.cc.o
+
+sherry/socket.i: sherry/socket.cc.i
+
+.PHONY : sherry/socket.i
+
+# target to preprocess a source file
+sherry/socket.cc.i:
+	$(MAKE) -f CMakeFiles/sherry.dir/build.make CMakeFiles/sherry.dir/sherry/socket.cc.i
+.PHONY : sherry/socket.cc.i
+
+sherry/socket.s: sherry/socket.cc.s
+
+.PHONY : sherry/socket.s
+
+# target to generate assembly for a file
+sherry/socket.cc.s:
+	$(MAKE) -f CMakeFiles/sherry.dir/build.make CMakeFiles/sherry.dir/sherry/socket.cc.s
+.PHONY : sherry/socket.cc.s
+
 sherry/thread.o: sherry/thread.cc.o
 
 .PHONY : sherry/thread.o
@@ -729,6 +769,33 @@ tests/test_scheduler.cc.s:
 	$(MAKE) -f CMakeFiles/test_scheduler.dir/build.make CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.s
 .PHONY : tests/test_scheduler.cc.s
 
+tests/test_socket.o: tests/test_socket.cc.o
+
+.PHONY : tests/test_socket.o
+
+# target to build an object file
+tests/test_socket.cc.o:
+	$(MAKE) -f CMakeFiles/test_socket.dir/build.make CMakeFiles/test_socket.dir/tests/test_socket.cc.o
+.PHONY : tests/test_socket.cc.o
+
+tests/test_socket.i: tests/test_socket.cc.i
+
+.PHONY : tests/test_socket.i
+
+# target to preprocess a source file
+tests/test_socket.cc.i:
+	$(MAKE) -f CMakeFiles/test_socket.dir/build.make CMakeFiles/test_socket.dir/tests/test_socket.cc.i
+.PHONY : tests/test_socket.cc.i
+
+tests/test_socket.s: tests/test_socket.cc.s
+
+.PHONY : tests/test_socket.s
+
+# target to generate assembly for a file
+tests/test_socket.cc.s:
+	$(MAKE) -f CMakeFiles/test_socket.dir/build.make CMakeFiles/test_socket.dir/tests/test_socket.cc.s
+.PHONY : tests/test_socket.cc.s
+
 tests/test_thread.o: tests/test_thread.cc.o
 
 .PHONY : tests/test_thread.o
@@ -793,6 +860,7 @@ help:
 	@echo "... sherry"
 	@echo "... test"
 	@echo "... rebuild_cache"
+	@echo "... test_socket"
 	@echo "... test_thread"
 	@echo "... test_util"
 	@echo "... test_config"
@@ -825,6 +893,9 @@ help:
 	@echo "... sherry/scheduler.o"
 	@echo "... sherry/scheduler.i"
 	@echo "... sherry/scheduler.s"
+	@echo "... sherry/socket.o"
+	@echo "... sherry/socket.i"
+	@echo "... sherry/socket.s"
 	@echo "... sherry/thread.o"
 	@echo "... sherry/thread.i"
 	@echo "... sherry/thread.s"
@@ -855,6 +926,9 @@ help:
 	@echo "... tests/test_scheduler.o"
 	@echo "... tests/test_scheduler.i"
 	@echo "... tests/test_scheduler.s"
+	@echo "... tests/test_socket.o"
+	@echo "... tests/test_socket.i"
+	@echo "... tests/test_socket.s"
 	@echo "... tests/test_thread.o"
 	@echo "... tests/test_thread.i"
 	@echo "... tests/test_thread.s"

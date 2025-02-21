@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/xxl/sherry/sherry/iomanager.cc" "/home/xxl/sherry/build/CMakeFiles/sherry.dir/sherry/iomanager.cc.o"
   "/home/xxl/sherry/sherry/log.cc" "/home/xxl/sherry/build/CMakeFiles/sherry.dir/sherry/log.cc.o"
   "/home/xxl/sherry/sherry/scheduler.cc" "/home/xxl/sherry/build/CMakeFiles/sherry.dir/sherry/scheduler.cc.o"
+  "/home/xxl/sherry/sherry/socket.cc" "/home/xxl/sherry/build/CMakeFiles/sherry.dir/sherry/socket.cc.o"
   "/home/xxl/sherry/sherry/thread.cc" "/home/xxl/sherry/build/CMakeFiles/sherry.dir/sherry/thread.cc.o"
   "/home/xxl/sherry/sherry/timer.cc" "/home/xxl/sherry/build/CMakeFiles/sherry.dir/sherry/timer.cc.o"
   "/home/xxl/sherry/sherry/util.cc" "/home/xxl/sherry/build/CMakeFiles/sherry.dir/sherry/util.cc.o"
