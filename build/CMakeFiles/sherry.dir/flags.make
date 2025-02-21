@@ -8,6 +8,8 @@ CXX_DEFINES = -Dsherry_EXPORTS
 
 CXX_INCLUDES = -I/home/xxl/sherry/. -I/build/yaml-cpp-0.8.0/include 
 
+# Custom defines: CMakeFiles/sherry.dir/sherry/address.cc.o_DEFINES = __FILE__="sherry/address.cc"
+
 # Custom defines: CMakeFiles/sherry.dir/sherry/log.cc.o_DEFINES = __FILE__="sherry/log.cc"
 
 # Custom defines: CMakeFiles/sherry.dir/sherry/fd_manager.cc.o_DEFINES = __FILE__="sherry/fd_manager.cc"
