@@ -54,7 +54,8 @@ static uint64_t s_connect_timeout = -1;
 
 struct _HookIniter{
     _HookIniter(){
-        hook_init();
+        hook_init(); // 调用hook_init()函数
+        // 赋值s_connect_timeout
         s_connect_timeout = g_tcp_connect_timeout->getValue();
         g_tcp_connect_timeout->addListener([](const int & old_value, const int & new_value){
             SYLAR_LOG_INFO(g_logger) << "tcp connect timeout change from "
@@ -81,22 +82,25 @@ struct timer_info{
 template<typename OriginFun, typename ... Args>
 static ssize_t do_io(int fd, OriginFun fun, const char * hook_fun_name,
         uint32_t event, int timeout_so, Args && ... args){
+    // 如果hook没有开启，直接调用原始函数
     if(!sherry::t_hook_enable){
         return fun(fd, std::forward<Args>(args)...);
     }           
 
     SYLAR_LOG_DEBUG(g_logger) << "do_io<" << hook_fun_name << ">";
 
+    // 获取fd对应的FdCtx
     sherry::FdCtx::ptr ctx = sherry::FdMgr::GetInstance()->get(fd);
-    if(!ctx){
+    if(!ctx){  // 如果ctx为空，直接调用原始函数
         return fun(fd, std::forward<Args>(args)...);
     }
 
+    // 如果fd已经关闭，设置errno为EBADF
     if(ctx->isClose()){
         errno = EBADF;
         return -1;
     }
-
+    // 如果fd不是套接字或者用户设置了非阻塞，直接调用原始函数
     if(!ctx->isSocket() || ctx->getUserNonblock()){
         return fun(fd, std::forward<Args>(args)...);
     }
@@ -105,14 +109,16 @@ static ssize_t do_io(int fd, OriginFun fun, const char * hook_fun_name,
     std::shared_ptr<timer_info> tinfo(new timer_info);
 retry:
     ssize_t n = fun(fd, std::forward<Args>(args)...);
+    // 如果n == -1 && errno == EINTR，说明是被信号中断，继续调用fun
     while(n == -1 && errno == EINTR){
         n = fun(fd, std::forward<Args>(args)...);
     }
+    // 如果n == -1 && errno == EAGAIN，说明是超时，需要调用IOManager的addEvent函数
     if(n == -1 && errno == EAGAIN){
         sherry::IOManager * iom = sherry::IOManager::GetThis();
         sherry::Timer::ptr timer;
         std::weak_ptr<timer_info> winfo(tinfo);
-
+        // 如果to不等于-1，说明设置了超时时间，需要添加定时器
         if(to != (uint64_t)-1){
             timer = iom->addConditionTimer(to, [winfo, fd, iom, event](){
                 auto t = winfo.lock();

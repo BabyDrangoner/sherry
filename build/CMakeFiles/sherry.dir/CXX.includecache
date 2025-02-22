@@ -6,42 +6,36 @@
 
 #IncludeRegexTransform: 
 
-/home/xxl/sherry/sherry/address.cc
-address.h
-/home/xxl/sherry/sherry/address.h
+/home/xxl/sherry/sherry/bytearray.cc
+bytearray.h
+/home/xxl/sherry/sherry/bytearray.h
+fstream
+-
 sstream
 -
-netdb.h
+string.h
 -
-ifaddrs.h
+iomanip
 -
 endian.h
 /home/xxl/sherry/sherry/endian.h
 log.h
 /home/xxl/sherry/sherry/log.h
 
-/home/xxl/sherry/sherry/address.h
+/home/xxl/sherry/sherry/bytearray.h
 memory
 -
 string
 -
-sys/socket.h
+stdint.h
 -
 sys/types.h
 -
-arpa/inet.h
--
-unistd.h
--
-iostream
--
-sys/un.h
--
-stddef.h
--
-map
+sys/socket.h
 -
 vector
+-
+math.h
 -
 
 /home/xxl/sherry/sherry/endian.h

@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/sherry.dir/sherry/address.cc.o"
+  "CMakeFiles/sherry.dir/sherry/bytearray.cc.o"
   "CMakeFiles/sherry.dir/sherry/log.cc.o"
   "CMakeFiles/sherry.dir/sherry/fd_manager.cc.o"
   "CMakeFiles/sherry.dir/sherry/fiber.cc.o"

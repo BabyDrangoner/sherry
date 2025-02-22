@@ -10,6 +10,15 @@ CMakeFiles/sherry.dir/sherry/address.cc.o: ../sherry/singleton.h
 CMakeFiles/sherry.dir/sherry/address.cc.o: ../sherry/thread.h
 CMakeFiles/sherry.dir/sherry/address.cc.o: ../sherry/util.h
 
+CMakeFiles/sherry.dir/sherry/bytearray.cc.o: ../sherry/bytearray.cc
+CMakeFiles/sherry.dir/sherry/bytearray.cc.o: ../sherry/bytearray.h
+CMakeFiles/sherry.dir/sherry/bytearray.cc.o: ../sherry/endian.h
+CMakeFiles/sherry.dir/sherry/bytearray.cc.o: ../sherry/log.h
+CMakeFiles/sherry.dir/sherry/bytearray.cc.o: ../sherry/noncopyable.h
+CMakeFiles/sherry.dir/sherry/bytearray.cc.o: ../sherry/singleton.h
+CMakeFiles/sherry.dir/sherry/bytearray.cc.o: ../sherry/thread.h
+CMakeFiles/sherry.dir/sherry/bytearray.cc.o: ../sherry/util.h
+
 CMakeFiles/sherry.dir/sherry/config.cc.o: ../sherry/config.cc
 CMakeFiles/sherry.dir/sherry/config.cc.o: ../sherry/config.h
 CMakeFiles/sherry.dir/sherry/config.cc.o: ../sherry/log.h

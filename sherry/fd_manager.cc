@@ -3,6 +3,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <unistd.h>
+#include <stdint.h>
 
 namespace sherry{
 
@@ -77,20 +78,27 @@ FdManager::FdManager(){
 }
 
 FdCtx::ptr FdManager::get(int fd, bool auto_create){
+    if(fd == -1){
+        return nullptr;
+    }
     RWMutexType::ReadLock lock(m_mutex);
-    if((int)m_datas.size() <= fd){
-        if(auto_create == false){
+    if((int)m_datas.size() <= fd){  // 文件描述符大于m_datas的大小
+        if(auto_create == false){  // 如果不允许自动创建新的fd
             return nullptr;
-        } else {
-            if(m_datas[fd] || !auto_create){
-                return m_datas[fd];
-            }
+        } 
+    } else {  // 文件描述符小于m_datas的大小
+        if(m_datas[fd] || !auto_create){ // 如果fd存在或者不允许自动创建新的fd
+            return m_datas[fd];      // 返回fd
         }
     }
     lock.unlock();
 
+    // 文件描述符小于m_datas的大小，但是fd不存在，允许自动创建新的fd
     RWMutexType::WriteLock lock2(m_mutex);
     FdCtx::ptr ctx(new FdCtx(fd));
+    if(fd >= (int)m_datas.size()){
+        m_datas.resize(fd * 1.5);
+    }
     m_datas[fd] = ctx;
     return ctx;
 }

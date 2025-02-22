@@ -13,12 +13,15 @@ link_directories(/apps/sherry/lib)
 find_library(YAMLCPP libyaml-cpp.a)
 
 set(LIB_SRC
+    sherry/address.cc
+    sherry/bytearray.cc
     sherry/log.cc
     sherry/fd_manager.cc
     sherry/fiber.cc
     sherry/util.cc
     sherry/hook.cc
     sherry/scheduler.cc
+    sherry/socket.cc
     sherry/timer.cc
     sherry/config.cc
     sherry/thread.cc
@@ -84,6 +87,21 @@ add_executable(test_hook tests/test_hook.cc)
 add_dependencies(test_hook sherry)
 force_redefine_file_macro_for_sources(test_hook)  #__FILE__
 target_link_libraries(test_hook ${LIBS})
+
+add_executable(test_address tests/test_address.cc)
+add_dependencies(test_address sherry)
+force_redefine_file_macro_for_sources(test_address)  #__FILE__
+target_link_libraries(test_address ${LIBS})
+
+add_executable(test_socket tests/test_socket.cc)
+add_dependencies(test_socket sherry)
+force_redefine_file_macro_for_sources(test_socket)  #__FILE__
+target_link_libraries(test_socket ${LIBS})
+
+add_executable(test_bytearray tests/test_bytearray.cc)
+add_dependencies(test_bytearray sherry)
+force_redefine_file_macro_for_sources(test_bytearray)  #__FILE__
+target_link_libraries(test_bytearray ${LIBS})
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)

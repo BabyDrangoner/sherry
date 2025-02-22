@@ -1,4 +1,5 @@
 /home/xxl/sherry/build/CMakeFiles/edit_cache.dir
+/home/xxl/sherry/build/CMakeFiles/test_bytearray.dir
 /home/xxl/sherry/build/CMakeFiles/sherry.dir
 /home/xxl/sherry/build/CMakeFiles/test.dir
 /home/xxl/sherry/build/CMakeFiles/rebuild_cache.dir
