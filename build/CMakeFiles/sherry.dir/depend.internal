@@ -31,7 +31,6 @@ CMakeFiles/sherry.dir/sherry/fd_manager.cc.o
  /home/xxl/sherry/sherry/fd_manager.cc
  /home/xxl/sherry/sherry/fd_manager.h
  /home/xxl/sherry/sherry/fiber.h
- /home/xxl/sherry/sherry/hook.h
  /home/xxl/sherry/sherry/iomanager.h
  /home/xxl/sherry/sherry/noncopyable.h
  /home/xxl/sherry/sherry/scheduler.h
@@ -54,7 +53,6 @@ CMakeFiles/sherry.dir/sherry/hook.cc.o
  /home/xxl/sherry/sherry/fd_manager.h
  /home/xxl/sherry/sherry/fiber.h
  /home/xxl/sherry/sherry/hook.cc
- /home/xxl/sherry/sherry/hook.h
  /home/xxl/sherry/sherry/iomanager.h
  /home/xxl/sherry/sherry/log.h
  /home/xxl/sherry/sherry/macro.h
@@ -64,6 +62,33 @@ CMakeFiles/sherry.dir/sherry/hook.cc.o
  /home/xxl/sherry/sherry/thread.h
  /home/xxl/sherry/sherry/timer.h
  /home/xxl/sherry/sherry/util.h
+CMakeFiles/sherry.dir/sherry/http/http.cc.o
+ /home/xxl/sherry/sherry/http/http.cc
+ /home/xxl/sherry/sherry/http/http.h
+ /home/xxl/sherry/sherry/http/http11_common.h
+ /home/xxl/sherry/sherry/http/http11_parser.h
+ /home/xxl/sherry/sherry/http/httpclient_parser.h
+CMakeFiles/sherry.dir/sherry/http/http11_parser.rl.cc.o
+ /home/xxl/sherry/sherry/http/http11_common.h
+ /home/xxl/sherry/sherry/http/http11_parser.h
+ /home/xxl/sherry/sherry/http/http11_parser.rl.cc
+CMakeFiles/sherry.dir/sherry/http/http_parser.cc.o
+ /home/xxl/sherry/sherry/config.h
+ /home/xxl/sherry/sherry/http/http.h
+ /home/xxl/sherry/sherry/http/http11_common.h
+ /home/xxl/sherry/sherry/http/http11_parser.h
+ /home/xxl/sherry/sherry/http/http_parser.cc
+ /home/xxl/sherry/sherry/http/http_parser.h
+ /home/xxl/sherry/sherry/http/httpclient_parser.h
+ /home/xxl/sherry/sherry/log.h
+ /home/xxl/sherry/sherry/noncopyable.h
+ /home/xxl/sherry/sherry/singleton.h
+ /home/xxl/sherry/sherry/thread.h
+ /home/xxl/sherry/sherry/util.h
+CMakeFiles/sherry.dir/sherry/http/httpclient_parser.rl.cc.o
+ /home/xxl/sherry/sherry/http/http11_common.h
+ /home/xxl/sherry/sherry/http/httpclient_parser.h
+ /home/xxl/sherry/sherry/http/httpclient_parser.rl.cc
 CMakeFiles/sherry.dir/sherry/iomanager.cc.o
  /home/xxl/sherry/sherry/fiber.h
  /home/xxl/sherry/sherry/iomanager.cc
@@ -86,7 +111,6 @@ CMakeFiles/sherry.dir/sherry/log.cc.o
  /home/xxl/sherry/sherry/util.h
 CMakeFiles/sherry.dir/sherry/scheduler.cc.o
  /home/xxl/sherry/sherry/fiber.h
- /home/xxl/sherry/sherry/hook.h
  /home/xxl/sherry/sherry/log.h
  /home/xxl/sherry/sherry/macro.h
  /home/xxl/sherry/sherry/noncopyable.h
@@ -99,7 +123,6 @@ CMakeFiles/sherry.dir/sherry/socket.cc.o
  /home/xxl/sherry/sherry/address.h
  /home/xxl/sherry/sherry/fd_manager.h
  /home/xxl/sherry/sherry/fiber.h
- /home/xxl/sherry/sherry/hook.h
  /home/xxl/sherry/sherry/iomanager.h
  /home/xxl/sherry/sherry/log.h
  /home/xxl/sherry/sherry/macro.h

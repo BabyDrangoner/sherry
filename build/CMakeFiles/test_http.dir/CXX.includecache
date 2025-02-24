@@ -6,30 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/xxl/sherry/sherry/config.h
-memory
--
-sstream
--
-boost/lexical_cast.hpp
-/home/xxl/sherry/sherry/boost/lexical_cast.hpp
-log.h
-/home/xxl/sherry/sherry/log.h
-yaml-cpp/yaml.h
--
-map
--
-set
--
-unordered_map
--
-unordered_set
--
-functional
--
-thread.h
-/home/xxl/sherry/sherry/thread.h
-
 /home/xxl/sherry/sherry/http/http.h
 memory
 -
@@ -57,24 +33,6 @@ sys/types.h
 /home/xxl/sherry/sherry/http/http11_parser.h
 http11_common.h
 /home/xxl/sherry/sherry/http/http11_common.h
-
-/home/xxl/sherry/sherry/http/http_parser.cc
-http_parser.h
-/home/xxl/sherry/sherry/http/http_parser.h
-../log.h
-/home/xxl/sherry/sherry/log.h
-../config.h
-/home/xxl/sherry/sherry/config.h
-string.h
--
-
-/home/xxl/sherry/sherry/http/http_parser.h
-http.h
-/home/xxl/sherry/sherry/http/http.h
-http11_parser.h
-/home/xxl/sherry/sherry/http/http11_parser.h
-httpclient_parser.h
-/home/xxl/sherry/sherry/http/httpclient_parser.h
 
 /home/xxl/sherry/sherry/http/httpclient_parser.h
 http11_common.h
@@ -145,4 +103,10 @@ vector
 -
 string
 -
+
+/home/xxl/sherry/tests/test_http.cc
+../sherry/http/http.h
+/home/xxl/sherry/sherry/http/http.h
+../sherry/log.h
+/home/xxl/sherry/sherry/log.h
 

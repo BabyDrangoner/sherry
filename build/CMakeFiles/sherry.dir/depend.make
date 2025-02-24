@@ -30,7 +30,6 @@ CMakeFiles/sherry.dir/sherry/config.cc.o: ../sherry/util.h
 CMakeFiles/sherry.dir/sherry/fd_manager.cc.o: ../sherry/fd_manager.cc
 CMakeFiles/sherry.dir/sherry/fd_manager.cc.o: ../sherry/fd_manager.h
 CMakeFiles/sherry.dir/sherry/fd_manager.cc.o: ../sherry/fiber.h
-CMakeFiles/sherry.dir/sherry/fd_manager.cc.o: ../sherry/hook.h
 CMakeFiles/sherry.dir/sherry/fd_manager.cc.o: ../sherry/iomanager.h
 CMakeFiles/sherry.dir/sherry/fd_manager.cc.o: ../sherry/noncopyable.h
 CMakeFiles/sherry.dir/sherry/fd_manager.cc.o: ../sherry/scheduler.h
@@ -53,7 +52,6 @@ CMakeFiles/sherry.dir/sherry/hook.cc.o: ../sherry/config.h
 CMakeFiles/sherry.dir/sherry/hook.cc.o: ../sherry/fd_manager.h
 CMakeFiles/sherry.dir/sherry/hook.cc.o: ../sherry/fiber.h
 CMakeFiles/sherry.dir/sherry/hook.cc.o: ../sherry/hook.cc
-CMakeFiles/sherry.dir/sherry/hook.cc.o: ../sherry/hook.h
 CMakeFiles/sherry.dir/sherry/hook.cc.o: ../sherry/iomanager.h
 CMakeFiles/sherry.dir/sherry/hook.cc.o: ../sherry/log.h
 CMakeFiles/sherry.dir/sherry/hook.cc.o: ../sherry/macro.h
@@ -63,6 +61,33 @@ CMakeFiles/sherry.dir/sherry/hook.cc.o: ../sherry/singleton.h
 CMakeFiles/sherry.dir/sherry/hook.cc.o: ../sherry/thread.h
 CMakeFiles/sherry.dir/sherry/hook.cc.o: ../sherry/timer.h
 CMakeFiles/sherry.dir/sherry/hook.cc.o: ../sherry/util.h
+
+CMakeFiles/sherry.dir/sherry/http/http.cc.o: ../sherry/http/http.cc
+CMakeFiles/sherry.dir/sherry/http/http.cc.o: ../sherry/http/http.h
+CMakeFiles/sherry.dir/sherry/http/http.cc.o: ../sherry/http/http11_common.h
+CMakeFiles/sherry.dir/sherry/http/http.cc.o: ../sherry/http/http11_parser.h
+CMakeFiles/sherry.dir/sherry/http/http.cc.o: ../sherry/http/httpclient_parser.h
+
+CMakeFiles/sherry.dir/sherry/http/http11_parser.rl.cc.o: ../sherry/http/http11_common.h
+CMakeFiles/sherry.dir/sherry/http/http11_parser.rl.cc.o: ../sherry/http/http11_parser.h
+CMakeFiles/sherry.dir/sherry/http/http11_parser.rl.cc.o: ../sherry/http/http11_parser.rl.cc
+
+CMakeFiles/sherry.dir/sherry/http/http_parser.cc.o: ../sherry/config.h
+CMakeFiles/sherry.dir/sherry/http/http_parser.cc.o: ../sherry/http/http.h
+CMakeFiles/sherry.dir/sherry/http/http_parser.cc.o: ../sherry/http/http11_common.h
+CMakeFiles/sherry.dir/sherry/http/http_parser.cc.o: ../sherry/http/http11_parser.h
+CMakeFiles/sherry.dir/sherry/http/http_parser.cc.o: ../sherry/http/http_parser.cc
+CMakeFiles/sherry.dir/sherry/http/http_parser.cc.o: ../sherry/http/http_parser.h
+CMakeFiles/sherry.dir/sherry/http/http_parser.cc.o: ../sherry/http/httpclient_parser.h
+CMakeFiles/sherry.dir/sherry/http/http_parser.cc.o: ../sherry/log.h
+CMakeFiles/sherry.dir/sherry/http/http_parser.cc.o: ../sherry/noncopyable.h
+CMakeFiles/sherry.dir/sherry/http/http_parser.cc.o: ../sherry/singleton.h
+CMakeFiles/sherry.dir/sherry/http/http_parser.cc.o: ../sherry/thread.h
+CMakeFiles/sherry.dir/sherry/http/http_parser.cc.o: ../sherry/util.h
+
+CMakeFiles/sherry.dir/sherry/http/httpclient_parser.rl.cc.o: ../sherry/http/http11_common.h
+CMakeFiles/sherry.dir/sherry/http/httpclient_parser.rl.cc.o: ../sherry/http/httpclient_parser.h
+CMakeFiles/sherry.dir/sherry/http/httpclient_parser.rl.cc.o: ../sherry/http/httpclient_parser.rl.cc
 
 CMakeFiles/sherry.dir/sherry/iomanager.cc.o: ../sherry/fiber.h
 CMakeFiles/sherry.dir/sherry/iomanager.cc.o: ../sherry/iomanager.cc
@@ -85,7 +110,6 @@ CMakeFiles/sherry.dir/sherry/log.cc.o: ../sherry/thread.h
 CMakeFiles/sherry.dir/sherry/log.cc.o: ../sherry/util.h
 
 CMakeFiles/sherry.dir/sherry/scheduler.cc.o: ../sherry/fiber.h
-CMakeFiles/sherry.dir/sherry/scheduler.cc.o: ../sherry/hook.h
 CMakeFiles/sherry.dir/sherry/scheduler.cc.o: ../sherry/log.h
 CMakeFiles/sherry.dir/sherry/scheduler.cc.o: ../sherry/macro.h
 CMakeFiles/sherry.dir/sherry/scheduler.cc.o: ../sherry/noncopyable.h
@@ -98,7 +122,6 @@ CMakeFiles/sherry.dir/sherry/scheduler.cc.o: ../sherry/util.h
 CMakeFiles/sherry.dir/sherry/socket.cc.o: ../sherry/address.h
 CMakeFiles/sherry.dir/sherry/socket.cc.o: ../sherry/fd_manager.h
 CMakeFiles/sherry.dir/sherry/socket.cc.o: ../sherry/fiber.h
-CMakeFiles/sherry.dir/sherry/socket.cc.o: ../sherry/hook.h
 CMakeFiles/sherry.dir/sherry/socket.cc.o: ../sherry/iomanager.h
 CMakeFiles/sherry.dir/sherry/socket.cc.o: ../sherry/log.h
 CMakeFiles/sherry.dir/sherry/socket.cc.o: ../sherry/macro.h

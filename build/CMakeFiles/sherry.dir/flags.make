@@ -14,6 +14,8 @@ CXX_INCLUDES = -I/home/xxl/sherry/. -I/build/yaml-cpp-0.8.0/include
 
 # Custom defines: CMakeFiles/sherry.dir/sherry/log.cc.o_DEFINES = __FILE__="sherry/log.cc"
 
+# Custom defines: CMakeFiles/sherry.dir/sherry/http/http.cc.o_DEFINES = __FILE__="sherry/http/http.cc"
+
 # Custom defines: CMakeFiles/sherry.dir/sherry/fd_manager.cc.o_DEFINES = __FILE__="sherry/fd_manager.cc"
 
 # Custom defines: CMakeFiles/sherry.dir/sherry/fiber.cc.o_DEFINES = __FILE__="sherry/fiber.cc"
@@ -21,6 +23,12 @@ CXX_INCLUDES = -I/home/xxl/sherry/. -I/build/yaml-cpp-0.8.0/include
 # Custom defines: CMakeFiles/sherry.dir/sherry/util.cc.o_DEFINES = __FILE__="sherry/util.cc"
 
 # Custom defines: CMakeFiles/sherry.dir/sherry/hook.cc.o_DEFINES = __FILE__="sherry/hook.cc"
+
+# Custom defines: CMakeFiles/sherry.dir/sherry/http/http11_parser.rl.cc.o_DEFINES = __FILE__="sherry/http/http11_parser.rl.cc"
+
+# Custom defines: CMakeFiles/sherry.dir/sherry/http/http_parser.cc.o_DEFINES = __FILE__="sherry/http/http_parser.cc"
+
+# Custom defines: CMakeFiles/sherry.dir/sherry/http/httpclient_parser.rl.cc.o_DEFINES = __FILE__="sherry/http/httpclient_parser.rl.cc"
 
 # Custom defines: CMakeFiles/sherry.dir/sherry/scheduler.cc.o_DEFINES = __FILE__="sherry/scheduler.cc"
 
