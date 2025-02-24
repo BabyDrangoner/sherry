@@ -16,10 +16,14 @@ set(LIB_SRC
     sherry/address.cc
     sherry/bytearray.cc
     sherry/log.cc
+    sherry/http/http.cc
     sherry/fd_manager.cc
     sherry/fiber.cc
     sherry/util.cc
     sherry/hook.cc
+    sherry/http/http11_parser.rl.cc
+    sherry/http/http_parser.cc
+    sherry/http/httpclient_parser.rl.cc
     sherry/scheduler.cc
     sherry/socket.cc
     sherry/timer.cc
@@ -102,6 +106,16 @@ add_executable(test_bytearray tests/test_bytearray.cc)
 add_dependencies(test_bytearray sherry)
 force_redefine_file_macro_for_sources(test_bytearray)  #__FILE__
 target_link_libraries(test_bytearray ${LIBS})
+
+add_executable(test_http tests/test_http.cc)
+add_dependencies(test_http sherry)
+force_redefine_file_macro_for_sources(test_http)  #__FILE__
+target_link_libraries(test_http ${LIBS})
+
+add_executable(test_parser tests/test_parser.cc)
+add_dependencies(test_parser sherry)
+force_redefine_file_macro_for_sources(test_parser)  #__FILE__
+target_link_libraries(test_parser ${LIBS})
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
