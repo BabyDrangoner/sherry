@@ -114,6 +114,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named test_tcp_server
+
+# Build rule for target.
+test_tcp_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_tcp_server
+.PHONY : test_tcp_server
+
+# fast build rule for target.
+test_tcp_server/fast:
+	$(MAKE) -f CMakeFiles/test_tcp_server.dir/build.make CMakeFiles/test_tcp_server.dir/build
+.PHONY : test_tcp_server/fast
+
+#=============================================================================
 # Target rules for targets named test_parser
 
 # Build rule for target.
@@ -205,6 +218,19 @@ test_thread/fast:
 .PHONY : test_thread/fast
 
 #=============================================================================
+# Target rules for targets named echo_server
+
+# Build rule for target.
+echo_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo_server
+.PHONY : echo_server
+
+# fast build rule for target.
+echo_server/fast:
+	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/build
+.PHONY : echo_server/fast
+
+#=============================================================================
 # Target rules for targets named test_util
 
 # Build rule for target.
@@ -294,6 +320,33 @@ test_address: cmake_check_build_system
 test_address/fast:
 	$(MAKE) -f CMakeFiles/test_address.dir/build.make CMakeFiles/test_address.dir/build
 .PHONY : test_address/fast
+
+examples/echo_server.o: examples/echo_server.cc.o
+
+.PHONY : examples/echo_server.o
+
+# target to build an object file
+examples/echo_server.cc.o:
+	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/examples/echo_server.cc.o
+.PHONY : examples/echo_server.cc.o
+
+examples/echo_server.i: examples/echo_server.cc.i
+
+.PHONY : examples/echo_server.i
+
+# target to preprocess a source file
+examples/echo_server.cc.i:
+	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/examples/echo_server.cc.i
+.PHONY : examples/echo_server.cc.i
+
+examples/echo_server.s: examples/echo_server.cc.s
+
+.PHONY : examples/echo_server.s
+
+# target to generate assembly for a file
+examples/echo_server.cc.s:
+	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/examples/echo_server.cc.s
+.PHONY : examples/echo_server.cc.s
 
 sherry/address.o: sherry/address.cc.o
 
@@ -673,6 +726,87 @@ sherry/socket.cc.s:
 	$(MAKE) -f CMakeFiles/sherry.dir/build.make CMakeFiles/sherry.dir/sherry/socket.cc.s
 .PHONY : sherry/socket.cc.s
 
+sherry/socket_stream.o: sherry/socket_stream.cc.o
+
+.PHONY : sherry/socket_stream.o
+
+# target to build an object file
+sherry/socket_stream.cc.o:
+	$(MAKE) -f CMakeFiles/sherry.dir/build.make CMakeFiles/sherry.dir/sherry/socket_stream.cc.o
+.PHONY : sherry/socket_stream.cc.o
+
+sherry/socket_stream.i: sherry/socket_stream.cc.i
+
+.PHONY : sherry/socket_stream.i
+
+# target to preprocess a source file
+sherry/socket_stream.cc.i:
+	$(MAKE) -f CMakeFiles/sherry.dir/build.make CMakeFiles/sherry.dir/sherry/socket_stream.cc.i
+.PHONY : sherry/socket_stream.cc.i
+
+sherry/socket_stream.s: sherry/socket_stream.cc.s
+
+.PHONY : sherry/socket_stream.s
+
+# target to generate assembly for a file
+sherry/socket_stream.cc.s:
+	$(MAKE) -f CMakeFiles/sherry.dir/build.make CMakeFiles/sherry.dir/sherry/socket_stream.cc.s
+.PHONY : sherry/socket_stream.cc.s
+
+sherry/stream.o: sherry/stream.cc.o
+
+.PHONY : sherry/stream.o
+
+# target to build an object file
+sherry/stream.cc.o:
+	$(MAKE) -f CMakeFiles/sherry.dir/build.make CMakeFiles/sherry.dir/sherry/stream.cc.o
+.PHONY : sherry/stream.cc.o
+
+sherry/stream.i: sherry/stream.cc.i
+
+.PHONY : sherry/stream.i
+
+# target to preprocess a source file
+sherry/stream.cc.i:
+	$(MAKE) -f CMakeFiles/sherry.dir/build.make CMakeFiles/sherry.dir/sherry/stream.cc.i
+.PHONY : sherry/stream.cc.i
+
+sherry/stream.s: sherry/stream.cc.s
+
+.PHONY : sherry/stream.s
+
+# target to generate assembly for a file
+sherry/stream.cc.s:
+	$(MAKE) -f CMakeFiles/sherry.dir/build.make CMakeFiles/sherry.dir/sherry/stream.cc.s
+.PHONY : sherry/stream.cc.s
+
+sherry/tcp_server.o: sherry/tcp_server.cc.o
+
+.PHONY : sherry/tcp_server.o
+
+# target to build an object file
+sherry/tcp_server.cc.o:
+	$(MAKE) -f CMakeFiles/sherry.dir/build.make CMakeFiles/sherry.dir/sherry/tcp_server.cc.o
+.PHONY : sherry/tcp_server.cc.o
+
+sherry/tcp_server.i: sherry/tcp_server.cc.i
+
+.PHONY : sherry/tcp_server.i
+
+# target to preprocess a source file
+sherry/tcp_server.cc.i:
+	$(MAKE) -f CMakeFiles/sherry.dir/build.make CMakeFiles/sherry.dir/sherry/tcp_server.cc.i
+.PHONY : sherry/tcp_server.cc.i
+
+sherry/tcp_server.s: sherry/tcp_server.cc.s
+
+.PHONY : sherry/tcp_server.s
+
+# target to generate assembly for a file
+sherry/tcp_server.cc.s:
+	$(MAKE) -f CMakeFiles/sherry.dir/build.make CMakeFiles/sherry.dir/sherry/tcp_server.cc.s
+.PHONY : sherry/tcp_server.cc.s
+
 sherry/thread.o: sherry/thread.cc.o
 
 .PHONY : sherry/thread.o
@@ -1051,6 +1185,33 @@ tests/test_socket.cc.s:
 	$(MAKE) -f CMakeFiles/test_socket.dir/build.make CMakeFiles/test_socket.dir/tests/test_socket.cc.s
 .PHONY : tests/test_socket.cc.s
 
+tests/test_tcp_server.o: tests/test_tcp_server.cc.o
+
+.PHONY : tests/test_tcp_server.o
+
+# target to build an object file
+tests/test_tcp_server.cc.o:
+	$(MAKE) -f CMakeFiles/test_tcp_server.dir/build.make CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cc.o
+.PHONY : tests/test_tcp_server.cc.o
+
+tests/test_tcp_server.i: tests/test_tcp_server.cc.i
+
+.PHONY : tests/test_tcp_server.i
+
+# target to preprocess a source file
+tests/test_tcp_server.cc.i:
+	$(MAKE) -f CMakeFiles/test_tcp_server.dir/build.make CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cc.i
+.PHONY : tests/test_tcp_server.cc.i
+
+tests/test_tcp_server.s: tests/test_tcp_server.cc.s
+
+.PHONY : tests/test_tcp_server.s
+
+# target to generate assembly for a file
+tests/test_tcp_server.cc.s:
+	$(MAKE) -f CMakeFiles/test_tcp_server.dir/build.make CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cc.s
+.PHONY : tests/test_tcp_server.cc.s
+
 tests/test_thread.o: tests/test_thread.cc.o
 
 .PHONY : tests/test_thread.o
@@ -1112,6 +1273,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... test_tcp_server"
 	@echo "... test_parser"
 	@echo "... test_bytearray"
 	@echo "... sherry"
@@ -1120,6 +1282,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test_socket"
 	@echo "... test_thread"
+	@echo "... echo_server"
 	@echo "... test_util"
 	@echo "... test_config"
 	@echo "... test_hook"
@@ -1127,6 +1290,9 @@ help:
 	@echo "... test_scheduler"
 	@echo "... test_iomanager"
 	@echo "... test_address"
+	@echo "... examples/echo_server.o"
+	@echo "... examples/echo_server.i"
+	@echo "... examples/echo_server.s"
 	@echo "... sherry/address.o"
 	@echo "... sherry/address.i"
 	@echo "... sherry/address.s"
@@ -1169,6 +1335,15 @@ help:
 	@echo "... sherry/socket.o"
 	@echo "... sherry/socket.i"
 	@echo "... sherry/socket.s"
+	@echo "... sherry/socket_stream.o"
+	@echo "... sherry/socket_stream.i"
+	@echo "... sherry/socket_stream.s"
+	@echo "... sherry/stream.o"
+	@echo "... sherry/stream.i"
+	@echo "... sherry/stream.s"
+	@echo "... sherry/tcp_server.o"
+	@echo "... sherry/tcp_server.i"
+	@echo "... sherry/tcp_server.s"
 	@echo "... sherry/thread.o"
 	@echo "... sherry/thread.i"
 	@echo "... sherry/thread.s"
@@ -1211,6 +1386,9 @@ help:
 	@echo "... tests/test_socket.o"
 	@echo "... tests/test_socket.i"
 	@echo "... tests/test_socket.s"
+	@echo "... tests/test_tcp_server.o"
+	@echo "... tests/test_tcp_server.i"
+	@echo "... tests/test_tcp_server.s"
 	@echo "... tests/test_thread.o"
 	@echo "... tests/test_thread.i"
 	@echo "... tests/test_thread.s"

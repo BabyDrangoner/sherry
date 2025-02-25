@@ -34,11 +34,17 @@ CXX_INCLUDES = -I/home/xxl/sherry/. -I/build/yaml-cpp-0.8.0/include
 
 # Custom defines: CMakeFiles/sherry.dir/sherry/socket.cc.o_DEFINES = __FILE__="sherry/socket.cc"
 
+# Custom defines: CMakeFiles/sherry.dir/sherry/socket_stream.cc.o_DEFINES = __FILE__="sherry/socket_stream.cc"
+
+# Custom defines: CMakeFiles/sherry.dir/sherry/stream.cc.o_DEFINES = __FILE__="sherry/stream.cc"
+
 # Custom defines: CMakeFiles/sherry.dir/sherry/timer.cc.o_DEFINES = __FILE__="sherry/timer.cc"
 
 # Custom defines: CMakeFiles/sherry.dir/sherry/config.cc.o_DEFINES = __FILE__="sherry/config.cc"
 
 # Custom defines: CMakeFiles/sherry.dir/sherry/thread.cc.o_DEFINES = __FILE__="sherry/thread.cc"
+
+# Custom defines: CMakeFiles/sherry.dir/sherry/tcp_server.cc.o_DEFINES = __FILE__="sherry/tcp_server.cc"
 
 # Custom defines: CMakeFiles/sherry.dir/sherry/iomanager.cc.o_DEFINES = __FILE__="sherry/iomanager.cc"
 

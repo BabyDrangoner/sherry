@@ -122,6 +122,7 @@ CMakeFiles/sherry.dir/sherry/scheduler.cc.o: ../sherry/util.h
 CMakeFiles/sherry.dir/sherry/socket.cc.o: ../sherry/address.h
 CMakeFiles/sherry.dir/sherry/socket.cc.o: ../sherry/fd_manager.h
 CMakeFiles/sherry.dir/sherry/socket.cc.o: ../sherry/fiber.h
+CMakeFiles/sherry.dir/sherry/socket.cc.o: ../sherry/hook.h
 CMakeFiles/sherry.dir/sherry/socket.cc.o: ../sherry/iomanager.h
 CMakeFiles/sherry.dir/sherry/socket.cc.o: ../sherry/log.h
 CMakeFiles/sherry.dir/sherry/socket.cc.o: ../sherry/macro.h
@@ -133,6 +134,39 @@ CMakeFiles/sherry.dir/sherry/socket.cc.o: ../sherry/socket.h
 CMakeFiles/sherry.dir/sherry/socket.cc.o: ../sherry/thread.h
 CMakeFiles/sherry.dir/sherry/socket.cc.o: ../sherry/timer.h
 CMakeFiles/sherry.dir/sherry/socket.cc.o: ../sherry/util.h
+
+CMakeFiles/sherry.dir/sherry/socket_stream.cc.o: ../sherry/address.h
+CMakeFiles/sherry.dir/sherry/socket_stream.cc.o: ../sherry/bytearray.h
+CMakeFiles/sherry.dir/sherry/socket_stream.cc.o: ../sherry/fiber.h
+CMakeFiles/sherry.dir/sherry/socket_stream.cc.o: ../sherry/iomanager.h
+CMakeFiles/sherry.dir/sherry/socket_stream.cc.o: ../sherry/noncopyable.h
+CMakeFiles/sherry.dir/sherry/socket_stream.cc.o: ../sherry/scheduler.h
+CMakeFiles/sherry.dir/sherry/socket_stream.cc.o: ../sherry/socket.h
+CMakeFiles/sherry.dir/sherry/socket_stream.cc.o: ../sherry/socket_stream.cc
+CMakeFiles/sherry.dir/sherry/socket_stream.cc.o: ../sherry/socket_stream.h
+CMakeFiles/sherry.dir/sherry/socket_stream.cc.o: ../sherry/stream.h
+CMakeFiles/sherry.dir/sherry/socket_stream.cc.o: ../sherry/thread.h
+CMakeFiles/sherry.dir/sherry/socket_stream.cc.o: ../sherry/timer.h
+CMakeFiles/sherry.dir/sherry/socket_stream.cc.o: ../sherry/util.h
+
+CMakeFiles/sherry.dir/sherry/stream.cc.o: ../sherry/bytearray.h
+CMakeFiles/sherry.dir/sherry/stream.cc.o: ../sherry/stream.cc
+CMakeFiles/sherry.dir/sherry/stream.cc.o: ../sherry/stream.h
+
+CMakeFiles/sherry.dir/sherry/tcp_server.cc.o: ../sherry/address.h
+CMakeFiles/sherry.dir/sherry/tcp_server.cc.o: ../sherry/config.h
+CMakeFiles/sherry.dir/sherry/tcp_server.cc.o: ../sherry/fiber.h
+CMakeFiles/sherry.dir/sherry/tcp_server.cc.o: ../sherry/iomanager.h
+CMakeFiles/sherry.dir/sherry/tcp_server.cc.o: ../sherry/log.h
+CMakeFiles/sherry.dir/sherry/tcp_server.cc.o: ../sherry/noncopyable.h
+CMakeFiles/sherry.dir/sherry/tcp_server.cc.o: ../sherry/scheduler.h
+CMakeFiles/sherry.dir/sherry/tcp_server.cc.o: ../sherry/singleton.h
+CMakeFiles/sherry.dir/sherry/tcp_server.cc.o: ../sherry/socket.h
+CMakeFiles/sherry.dir/sherry/tcp_server.cc.o: ../sherry/tcp_server.cc
+CMakeFiles/sherry.dir/sherry/tcp_server.cc.o: ../sherry/tcp_server.h
+CMakeFiles/sherry.dir/sherry/tcp_server.cc.o: ../sherry/thread.h
+CMakeFiles/sherry.dir/sherry/tcp_server.cc.o: ../sherry/timer.h
+CMakeFiles/sherry.dir/sherry/tcp_server.cc.o: ../sherry/util.h
 
 CMakeFiles/sherry.dir/sherry/thread.cc.o: ../sherry/log.h
 CMakeFiles/sherry.dir/sherry/thread.cc.o: ../sherry/noncopyable.h

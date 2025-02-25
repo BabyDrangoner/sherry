@@ -123,6 +123,7 @@ CMakeFiles/sherry.dir/sherry/socket.cc.o
  /home/xxl/sherry/sherry/address.h
  /home/xxl/sherry/sherry/fd_manager.h
  /home/xxl/sherry/sherry/fiber.h
+ /home/xxl/sherry/sherry/hook.h
  /home/xxl/sherry/sherry/iomanager.h
  /home/xxl/sherry/sherry/log.h
  /home/xxl/sherry/sherry/macro.h
@@ -131,6 +132,39 @@ CMakeFiles/sherry.dir/sherry/socket.cc.o
  /home/xxl/sherry/sherry/singleton.h
  /home/xxl/sherry/sherry/socket.cc
  /home/xxl/sherry/sherry/socket.h
+ /home/xxl/sherry/sherry/thread.h
+ /home/xxl/sherry/sherry/timer.h
+ /home/xxl/sherry/sherry/util.h
+CMakeFiles/sherry.dir/sherry/socket_stream.cc.o
+ /home/xxl/sherry/sherry/address.h
+ /home/xxl/sherry/sherry/bytearray.h
+ /home/xxl/sherry/sherry/fiber.h
+ /home/xxl/sherry/sherry/iomanager.h
+ /home/xxl/sherry/sherry/noncopyable.h
+ /home/xxl/sherry/sherry/scheduler.h
+ /home/xxl/sherry/sherry/socket.h
+ /home/xxl/sherry/sherry/socket_stream.cc
+ /home/xxl/sherry/sherry/socket_stream.h
+ /home/xxl/sherry/sherry/stream.h
+ /home/xxl/sherry/sherry/thread.h
+ /home/xxl/sherry/sherry/timer.h
+ /home/xxl/sherry/sherry/util.h
+CMakeFiles/sherry.dir/sherry/stream.cc.o
+ /home/xxl/sherry/sherry/bytearray.h
+ /home/xxl/sherry/sherry/stream.cc
+ /home/xxl/sherry/sherry/stream.h
+CMakeFiles/sherry.dir/sherry/tcp_server.cc.o
+ /home/xxl/sherry/sherry/address.h
+ /home/xxl/sherry/sherry/config.h
+ /home/xxl/sherry/sherry/fiber.h
+ /home/xxl/sherry/sherry/iomanager.h
+ /home/xxl/sherry/sherry/log.h
+ /home/xxl/sherry/sherry/noncopyable.h
+ /home/xxl/sherry/sherry/scheduler.h
+ /home/xxl/sherry/sherry/singleton.h
+ /home/xxl/sherry/sherry/socket.h
+ /home/xxl/sherry/sherry/tcp_server.cc
+ /home/xxl/sherry/sherry/tcp_server.h
  /home/xxl/sherry/sherry/thread.h
  /home/xxl/sherry/sherry/timer.h
  /home/xxl/sherry/sherry/util.h

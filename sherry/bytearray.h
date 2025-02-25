@@ -86,6 +86,7 @@ public:
 
     size_t getPosition() const { return m_position;}
     void setPosition(size_t v);
+
     bool writeToFile(const std::string& name) const;
     bool readFromFile(const std::string& name);
 
