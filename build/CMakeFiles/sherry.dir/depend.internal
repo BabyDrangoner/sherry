@@ -85,10 +85,73 @@ CMakeFiles/sherry.dir/sherry/http/http_parser.cc.o
  /home/xxl/sherry/sherry/singleton.h
  /home/xxl/sherry/sherry/thread.h
  /home/xxl/sherry/sherry/util.h
+CMakeFiles/sherry.dir/sherry/http/http_server.cc.o
+ /home/xxl/sherry/sherry/address.h
+ /home/xxl/sherry/sherry/bytearray.h
+ /home/xxl/sherry/sherry/fiber.h
+ /home/xxl/sherry/sherry/http/http.h
+ /home/xxl/sherry/sherry/http/http11_common.h
+ /home/xxl/sherry/sherry/http/http11_parser.h
+ /home/xxl/sherry/sherry/http/http_server.cc
+ /home/xxl/sherry/sherry/http/http_server.h
+ /home/xxl/sherry/sherry/http/http_session.h
+ /home/xxl/sherry/sherry/http/httpclient_parser.h
+ /home/xxl/sherry/sherry/http/servlet.h
+ /home/xxl/sherry/sherry/iomanager.h
+ /home/xxl/sherry/sherry/log.h
+ /home/xxl/sherry/sherry/noncopyable.h
+ /home/xxl/sherry/sherry/scheduler.h
+ /home/xxl/sherry/sherry/singleton.h
+ /home/xxl/sherry/sherry/socket.h
+ /home/xxl/sherry/sherry/socket_stream.h
+ /home/xxl/sherry/sherry/stream.h
+ /home/xxl/sherry/sherry/tcp_server.h
+ /home/xxl/sherry/sherry/thread.h
+ /home/xxl/sherry/sherry/timer.h
+ /home/xxl/sherry/sherry/util.h
+CMakeFiles/sherry.dir/sherry/http/http_session.cc.o
+ /home/xxl/sherry/sherry/address.h
+ /home/xxl/sherry/sherry/bytearray.h
+ /home/xxl/sherry/sherry/fiber.h
+ /home/xxl/sherry/sherry/http/http.h
+ /home/xxl/sherry/sherry/http/http11_common.h
+ /home/xxl/sherry/sherry/http/http11_parser.h
+ /home/xxl/sherry/sherry/http/http_parser.h
+ /home/xxl/sherry/sherry/http/http_session.cc
+ /home/xxl/sherry/sherry/http/http_session.h
+ /home/xxl/sherry/sherry/http/httpclient_parser.h
+ /home/xxl/sherry/sherry/iomanager.h
+ /home/xxl/sherry/sherry/noncopyable.h
+ /home/xxl/sherry/sherry/scheduler.h
+ /home/xxl/sherry/sherry/socket.h
+ /home/xxl/sherry/sherry/socket_stream.h
+ /home/xxl/sherry/sherry/stream.h
+ /home/xxl/sherry/sherry/thread.h
+ /home/xxl/sherry/sherry/timer.h
 CMakeFiles/sherry.dir/sherry/http/httpclient_parser.rl.cc.o
  /home/xxl/sherry/sherry/http/http11_common.h
  /home/xxl/sherry/sherry/http/httpclient_parser.h
  /home/xxl/sherry/sherry/http/httpclient_parser.rl.cc
+CMakeFiles/sherry.dir/sherry/http/servlet.cc.o
+ /home/xxl/sherry/sherry/address.h
+ /home/xxl/sherry/sherry/bytearray.h
+ /home/xxl/sherry/sherry/fiber.h
+ /home/xxl/sherry/sherry/http/http.h
+ /home/xxl/sherry/sherry/http/http11_common.h
+ /home/xxl/sherry/sherry/http/http11_parser.h
+ /home/xxl/sherry/sherry/http/http_session.h
+ /home/xxl/sherry/sherry/http/httpclient_parser.h
+ /home/xxl/sherry/sherry/http/servlet.cc
+ /home/xxl/sherry/sherry/http/servlet.h
+ /home/xxl/sherry/sherry/iomanager.h
+ /home/xxl/sherry/sherry/noncopyable.h
+ /home/xxl/sherry/sherry/scheduler.h
+ /home/xxl/sherry/sherry/socket.h
+ /home/xxl/sherry/sherry/socket_stream.h
+ /home/xxl/sherry/sherry/stream.h
+ /home/xxl/sherry/sherry/thread.h
+ /home/xxl/sherry/sherry/timer.h
+ /home/xxl/sherry/sherry/util.h
 CMakeFiles/sherry.dir/sherry/iomanager.cc.o
  /home/xxl/sherry/sherry/fiber.h
  /home/xxl/sherry/sherry/iomanager.cc

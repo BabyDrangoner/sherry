@@ -203,9 +203,48 @@ CMakeFiles/sherry.dir/sherry/http/httpclient_parser.rl.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sherry.dir/sherry/http/httpclient_parser.rl.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"sherry/http/httpclient_parser.rl.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xxl/sherry/sherry/http/httpclient_parser.rl.cc -o CMakeFiles/sherry.dir/sherry/http/httpclient_parser.rl.cc.s
 
+CMakeFiles/sherry.dir/sherry/http/http_session.cc.o: CMakeFiles/sherry.dir/flags.make
+CMakeFiles/sherry.dir/sherry/http/http_session.cc.o: ../sherry/http/http_session.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xxl/sherry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/sherry.dir/sherry/http/http_session.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"sherry/http/http_session.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sherry.dir/sherry/http/http_session.cc.o -c /home/xxl/sherry/sherry/http/http_session.cc
+
+CMakeFiles/sherry.dir/sherry/http/http_session.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sherry.dir/sherry/http/http_session.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"sherry/http/http_session.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xxl/sherry/sherry/http/http_session.cc > CMakeFiles/sherry.dir/sherry/http/http_session.cc.i
+
+CMakeFiles/sherry.dir/sherry/http/http_session.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sherry.dir/sherry/http/http_session.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"sherry/http/http_session.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xxl/sherry/sherry/http/http_session.cc -o CMakeFiles/sherry.dir/sherry/http/http_session.cc.s
+
+CMakeFiles/sherry.dir/sherry/http/http_server.cc.o: CMakeFiles/sherry.dir/flags.make
+CMakeFiles/sherry.dir/sherry/http/http_server.cc.o: ../sherry/http/http_server.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xxl/sherry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/sherry.dir/sherry/http/http_server.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"sherry/http/http_server.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sherry.dir/sherry/http/http_server.cc.o -c /home/xxl/sherry/sherry/http/http_server.cc
+
+CMakeFiles/sherry.dir/sherry/http/http_server.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sherry.dir/sherry/http/http_server.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"sherry/http/http_server.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xxl/sherry/sherry/http/http_server.cc > CMakeFiles/sherry.dir/sherry/http/http_server.cc.i
+
+CMakeFiles/sherry.dir/sherry/http/http_server.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sherry.dir/sherry/http/http_server.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"sherry/http/http_server.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xxl/sherry/sherry/http/http_server.cc -o CMakeFiles/sherry.dir/sherry/http/http_server.cc.s
+
+CMakeFiles/sherry.dir/sherry/http/servlet.cc.o: CMakeFiles/sherry.dir/flags.make
+CMakeFiles/sherry.dir/sherry/http/servlet.cc.o: ../sherry/http/servlet.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xxl/sherry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/sherry.dir/sherry/http/servlet.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"sherry/http/servlet.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sherry.dir/sherry/http/servlet.cc.o -c /home/xxl/sherry/sherry/http/servlet.cc
+
+CMakeFiles/sherry.dir/sherry/http/servlet.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sherry.dir/sherry/http/servlet.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"sherry/http/servlet.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xxl/sherry/sherry/http/servlet.cc > CMakeFiles/sherry.dir/sherry/http/servlet.cc.i
+
+CMakeFiles/sherry.dir/sherry/http/servlet.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sherry.dir/sherry/http/servlet.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"sherry/http/servlet.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xxl/sherry/sherry/http/servlet.cc -o CMakeFiles/sherry.dir/sherry/http/servlet.cc.s
+
 CMakeFiles/sherry.dir/sherry/scheduler.cc.o: CMakeFiles/sherry.dir/flags.make
 CMakeFiles/sherry.dir/sherry/scheduler.cc.o: ../sherry/scheduler.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xxl/sherry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/sherry.dir/sherry/scheduler.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xxl/sherry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/sherry.dir/sherry/scheduler.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"sherry/scheduler.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sherry.dir/sherry/scheduler.cc.o -c /home/xxl/sherry/sherry/scheduler.cc
 
 CMakeFiles/sherry.dir/sherry/scheduler.cc.i: cmake_force
@@ -218,7 +257,7 @@ CMakeFiles/sherry.dir/sherry/scheduler.cc.s: cmake_force
 
 CMakeFiles/sherry.dir/sherry/socket.cc.o: CMakeFiles/sherry.dir/flags.make
 CMakeFiles/sherry.dir/sherry/socket.cc.o: ../sherry/socket.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xxl/sherry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/sherry.dir/sherry/socket.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xxl/sherry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/sherry.dir/sherry/socket.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"sherry/socket.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sherry.dir/sherry/socket.cc.o -c /home/xxl/sherry/sherry/socket.cc
 
 CMakeFiles/sherry.dir/sherry/socket.cc.i: cmake_force
@@ -231,7 +270,7 @@ CMakeFiles/sherry.dir/sherry/socket.cc.s: cmake_force
 
 CMakeFiles/sherry.dir/sherry/socket_stream.cc.o: CMakeFiles/sherry.dir/flags.make
 CMakeFiles/sherry.dir/sherry/socket_stream.cc.o: ../sherry/socket_stream.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xxl/sherry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/sherry.dir/sherry/socket_stream.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xxl/sherry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/sherry.dir/sherry/socket_stream.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"sherry/socket_stream.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sherry.dir/sherry/socket_stream.cc.o -c /home/xxl/sherry/sherry/socket_stream.cc
 
 CMakeFiles/sherry.dir/sherry/socket_stream.cc.i: cmake_force
@@ -244,7 +283,7 @@ CMakeFiles/sherry.dir/sherry/socket_stream.cc.s: cmake_force
 
 CMakeFiles/sherry.dir/sherry/stream.cc.o: CMakeFiles/sherry.dir/flags.make
 CMakeFiles/sherry.dir/sherry/stream.cc.o: ../sherry/stream.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xxl/sherry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/sherry.dir/sherry/stream.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xxl/sherry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/sherry.dir/sherry/stream.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"sherry/stream.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sherry.dir/sherry/stream.cc.o -c /home/xxl/sherry/sherry/stream.cc
 
 CMakeFiles/sherry.dir/sherry/stream.cc.i: cmake_force
@@ -257,7 +296,7 @@ CMakeFiles/sherry.dir/sherry/stream.cc.s: cmake_force
 
 CMakeFiles/sherry.dir/sherry/timer.cc.o: CMakeFiles/sherry.dir/flags.make
 CMakeFiles/sherry.dir/sherry/timer.cc.o: ../sherry/timer.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xxl/sherry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/sherry.dir/sherry/timer.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xxl/sherry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/sherry.dir/sherry/timer.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"sherry/timer.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sherry.dir/sherry/timer.cc.o -c /home/xxl/sherry/sherry/timer.cc
 
 CMakeFiles/sherry.dir/sherry/timer.cc.i: cmake_force
@@ -270,7 +309,7 @@ CMakeFiles/sherry.dir/sherry/timer.cc.s: cmake_force
 
 CMakeFiles/sherry.dir/sherry/config.cc.o: CMakeFiles/sherry.dir/flags.make
 CMakeFiles/sherry.dir/sherry/config.cc.o: ../sherry/config.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xxl/sherry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/sherry.dir/sherry/config.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xxl/sherry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/sherry.dir/sherry/config.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"sherry/config.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sherry.dir/sherry/config.cc.o -c /home/xxl/sherry/sherry/config.cc
 
 CMakeFiles/sherry.dir/sherry/config.cc.i: cmake_force
@@ -283,7 +322,7 @@ CMakeFiles/sherry.dir/sherry/config.cc.s: cmake_force
 
 CMakeFiles/sherry.dir/sherry/thread.cc.o: CMakeFiles/sherry.dir/flags.make
 CMakeFiles/sherry.dir/sherry/thread.cc.o: ../sherry/thread.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xxl/sherry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/sherry.dir/sherry/thread.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xxl/sherry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/sherry.dir/sherry/thread.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"sherry/thread.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sherry.dir/sherry/thread.cc.o -c /home/xxl/sherry/sherry/thread.cc
 
 CMakeFiles/sherry.dir/sherry/thread.cc.i: cmake_force
@@ -296,7 +335,7 @@ CMakeFiles/sherry.dir/sherry/thread.cc.s: cmake_force
 
 CMakeFiles/sherry.dir/sherry/tcp_server.cc.o: CMakeFiles/sherry.dir/flags.make
 CMakeFiles/sherry.dir/sherry/tcp_server.cc.o: ../sherry/tcp_server.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xxl/sherry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/sherry.dir/sherry/tcp_server.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xxl/sherry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/sherry.dir/sherry/tcp_server.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"sherry/tcp_server.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sherry.dir/sherry/tcp_server.cc.o -c /home/xxl/sherry/sherry/tcp_server.cc
 
 CMakeFiles/sherry.dir/sherry/tcp_server.cc.i: cmake_force
@@ -309,7 +348,7 @@ CMakeFiles/sherry.dir/sherry/tcp_server.cc.s: cmake_force
 
 CMakeFiles/sherry.dir/sherry/iomanager.cc.o: CMakeFiles/sherry.dir/flags.make
 CMakeFiles/sherry.dir/sherry/iomanager.cc.o: ../sherry/iomanager.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xxl/sherry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/sherry.dir/sherry/iomanager.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xxl/sherry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/sherry.dir/sherry/iomanager.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"sherry/iomanager.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sherry.dir/sherry/iomanager.cc.o -c /home/xxl/sherry/sherry/iomanager.cc
 
 CMakeFiles/sherry.dir/sherry/iomanager.cc.i: cmake_force
@@ -333,6 +372,9 @@ sherry_OBJECTS = \
 "CMakeFiles/sherry.dir/sherry/http/http11_parser.rl.cc.o" \
 "CMakeFiles/sherry.dir/sherry/http/http_parser.cc.o" \
 "CMakeFiles/sherry.dir/sherry/http/httpclient_parser.rl.cc.o" \
+"CMakeFiles/sherry.dir/sherry/http/http_session.cc.o" \
+"CMakeFiles/sherry.dir/sherry/http/http_server.cc.o" \
+"CMakeFiles/sherry.dir/sherry/http/servlet.cc.o" \
 "CMakeFiles/sherry.dir/sherry/scheduler.cc.o" \
 "CMakeFiles/sherry.dir/sherry/socket.cc.o" \
 "CMakeFiles/sherry.dir/sherry/socket_stream.cc.o" \
@@ -357,6 +399,9 @@ sherry_EXTERNAL_OBJECTS =
 ../lib/libsherry.so: CMakeFiles/sherry.dir/sherry/http/http11_parser.rl.cc.o
 ../lib/libsherry.so: CMakeFiles/sherry.dir/sherry/http/http_parser.cc.o
 ../lib/libsherry.so: CMakeFiles/sherry.dir/sherry/http/httpclient_parser.rl.cc.o
+../lib/libsherry.so: CMakeFiles/sherry.dir/sherry/http/http_session.cc.o
+../lib/libsherry.so: CMakeFiles/sherry.dir/sherry/http/http_server.cc.o
+../lib/libsherry.so: CMakeFiles/sherry.dir/sherry/http/servlet.cc.o
 ../lib/libsherry.so: CMakeFiles/sherry.dir/sherry/scheduler.cc.o
 ../lib/libsherry.so: CMakeFiles/sherry.dir/sherry/socket.cc.o
 ../lib/libsherry.so: CMakeFiles/sherry.dir/sherry/socket_stream.cc.o
@@ -368,7 +413,7 @@ sherry_EXTERNAL_OBJECTS =
 ../lib/libsherry.so: CMakeFiles/sherry.dir/sherry/iomanager.cc.o
 ../lib/libsherry.so: CMakeFiles/sherry.dir/build.make
 ../lib/libsherry.so: CMakeFiles/sherry.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xxl/sherry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX shared library ../lib/libsherry.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xxl/sherry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX shared library ../lib/libsherry.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sherry.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

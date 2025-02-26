@@ -218,6 +218,19 @@ test_thread/fast:
 .PHONY : test_thread/fast
 
 #=============================================================================
+# Target rules for targets named test_http_server
+
+# Build rule for target.
+test_http_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_http_server
+.PHONY : test_http_server
+
+# fast build rule for target.
+test_http_server/fast:
+	$(MAKE) -f CMakeFiles/test_http_server.dir/build.make CMakeFiles/test_http_server.dir/build
+.PHONY : test_http_server/fast
+
+#=============================================================================
 # Target rules for targets named echo_server
 
 # Build rule for target.
@@ -591,6 +604,60 @@ sherry/http/http_parser.cc.s:
 	$(MAKE) -f CMakeFiles/sherry.dir/build.make CMakeFiles/sherry.dir/sherry/http/http_parser.cc.s
 .PHONY : sherry/http/http_parser.cc.s
 
+sherry/http/http_server.o: sherry/http/http_server.cc.o
+
+.PHONY : sherry/http/http_server.o
+
+# target to build an object file
+sherry/http/http_server.cc.o:
+	$(MAKE) -f CMakeFiles/sherry.dir/build.make CMakeFiles/sherry.dir/sherry/http/http_server.cc.o
+.PHONY : sherry/http/http_server.cc.o
+
+sherry/http/http_server.i: sherry/http/http_server.cc.i
+
+.PHONY : sherry/http/http_server.i
+
+# target to preprocess a source file
+sherry/http/http_server.cc.i:
+	$(MAKE) -f CMakeFiles/sherry.dir/build.make CMakeFiles/sherry.dir/sherry/http/http_server.cc.i
+.PHONY : sherry/http/http_server.cc.i
+
+sherry/http/http_server.s: sherry/http/http_server.cc.s
+
+.PHONY : sherry/http/http_server.s
+
+# target to generate assembly for a file
+sherry/http/http_server.cc.s:
+	$(MAKE) -f CMakeFiles/sherry.dir/build.make CMakeFiles/sherry.dir/sherry/http/http_server.cc.s
+.PHONY : sherry/http/http_server.cc.s
+
+sherry/http/http_session.o: sherry/http/http_session.cc.o
+
+.PHONY : sherry/http/http_session.o
+
+# target to build an object file
+sherry/http/http_session.cc.o:
+	$(MAKE) -f CMakeFiles/sherry.dir/build.make CMakeFiles/sherry.dir/sherry/http/http_session.cc.o
+.PHONY : sherry/http/http_session.cc.o
+
+sherry/http/http_session.i: sherry/http/http_session.cc.i
+
+.PHONY : sherry/http/http_session.i
+
+# target to preprocess a source file
+sherry/http/http_session.cc.i:
+	$(MAKE) -f CMakeFiles/sherry.dir/build.make CMakeFiles/sherry.dir/sherry/http/http_session.cc.i
+.PHONY : sherry/http/http_session.cc.i
+
+sherry/http/http_session.s: sherry/http/http_session.cc.s
+
+.PHONY : sherry/http/http_session.s
+
+# target to generate assembly for a file
+sherry/http/http_session.cc.s:
+	$(MAKE) -f CMakeFiles/sherry.dir/build.make CMakeFiles/sherry.dir/sherry/http/http_session.cc.s
+.PHONY : sherry/http/http_session.cc.s
+
 sherry/http/httpclient_parser.rl.o: sherry/http/httpclient_parser.rl.cc.o
 
 .PHONY : sherry/http/httpclient_parser.rl.o
@@ -617,6 +684,33 @@ sherry/http/httpclient_parser.rl.s: sherry/http/httpclient_parser.rl.cc.s
 sherry/http/httpclient_parser.rl.cc.s:
 	$(MAKE) -f CMakeFiles/sherry.dir/build.make CMakeFiles/sherry.dir/sherry/http/httpclient_parser.rl.cc.s
 .PHONY : sherry/http/httpclient_parser.rl.cc.s
+
+sherry/http/servlet.o: sherry/http/servlet.cc.o
+
+.PHONY : sherry/http/servlet.o
+
+# target to build an object file
+sherry/http/servlet.cc.o:
+	$(MAKE) -f CMakeFiles/sherry.dir/build.make CMakeFiles/sherry.dir/sherry/http/servlet.cc.o
+.PHONY : sherry/http/servlet.cc.o
+
+sherry/http/servlet.i: sherry/http/servlet.cc.i
+
+.PHONY : sherry/http/servlet.i
+
+# target to preprocess a source file
+sherry/http/servlet.cc.i:
+	$(MAKE) -f CMakeFiles/sherry.dir/build.make CMakeFiles/sherry.dir/sherry/http/servlet.cc.i
+.PHONY : sherry/http/servlet.cc.i
+
+sherry/http/servlet.s: sherry/http/servlet.cc.s
+
+.PHONY : sherry/http/servlet.s
+
+# target to generate assembly for a file
+sherry/http/servlet.cc.s:
+	$(MAKE) -f CMakeFiles/sherry.dir/build.make CMakeFiles/sherry.dir/sherry/http/servlet.cc.s
+.PHONY : sherry/http/servlet.cc.s
 
 sherry/iomanager.o: sherry/iomanager.cc.o
 
@@ -1077,6 +1171,33 @@ tests/test_http.cc.s:
 	$(MAKE) -f CMakeFiles/test_http.dir/build.make CMakeFiles/test_http.dir/tests/test_http.cc.s
 .PHONY : tests/test_http.cc.s
 
+tests/test_http_server.o: tests/test_http_server.cc.o
+
+.PHONY : tests/test_http_server.o
+
+# target to build an object file
+tests/test_http_server.cc.o:
+	$(MAKE) -f CMakeFiles/test_http_server.dir/build.make CMakeFiles/test_http_server.dir/tests/test_http_server.cc.o
+.PHONY : tests/test_http_server.cc.o
+
+tests/test_http_server.i: tests/test_http_server.cc.i
+
+.PHONY : tests/test_http_server.i
+
+# target to preprocess a source file
+tests/test_http_server.cc.i:
+	$(MAKE) -f CMakeFiles/test_http_server.dir/build.make CMakeFiles/test_http_server.dir/tests/test_http_server.cc.i
+.PHONY : tests/test_http_server.cc.i
+
+tests/test_http_server.s: tests/test_http_server.cc.s
+
+.PHONY : tests/test_http_server.s
+
+# target to generate assembly for a file
+tests/test_http_server.cc.s:
+	$(MAKE) -f CMakeFiles/test_http_server.dir/build.make CMakeFiles/test_http_server.dir/tests/test_http_server.cc.s
+.PHONY : tests/test_http_server.cc.s
+
 tests/test_iomanager.o: tests/test_iomanager.cc.o
 
 .PHONY : tests/test_iomanager.o
@@ -1282,6 +1403,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test_socket"
 	@echo "... test_thread"
+	@echo "... test_http_server"
 	@echo "... echo_server"
 	@echo "... test_util"
 	@echo "... test_config"
@@ -1320,9 +1442,18 @@ help:
 	@echo "... sherry/http/http_parser.o"
 	@echo "... sherry/http/http_parser.i"
 	@echo "... sherry/http/http_parser.s"
+	@echo "... sherry/http/http_server.o"
+	@echo "... sherry/http/http_server.i"
+	@echo "... sherry/http/http_server.s"
+	@echo "... sherry/http/http_session.o"
+	@echo "... sherry/http/http_session.i"
+	@echo "... sherry/http/http_session.s"
 	@echo "... sherry/http/httpclient_parser.rl.o"
 	@echo "... sherry/http/httpclient_parser.rl.i"
 	@echo "... sherry/http/httpclient_parser.rl.s"
+	@echo "... sherry/http/servlet.o"
+	@echo "... sherry/http/servlet.i"
+	@echo "... sherry/http/servlet.s"
 	@echo "... sherry/iomanager.o"
 	@echo "... sherry/iomanager.i"
 	@echo "... sherry/iomanager.s"
@@ -1374,6 +1505,9 @@ help:
 	@echo "... tests/test_http.o"
 	@echo "... tests/test_http.i"
 	@echo "... tests/test_http.s"
+	@echo "... tests/test_http_server.o"
+	@echo "... tests/test_http_server.i"
+	@echo "... tests/test_http_server.s"
 	@echo "... tests/test_iomanager.o"
 	@echo "... tests/test_iomanager.i"
 	@echo "... tests/test_iomanager.s"

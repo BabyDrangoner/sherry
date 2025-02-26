@@ -30,6 +30,12 @@ CXX_INCLUDES = -I/home/xxl/sherry/. -I/build/yaml-cpp-0.8.0/include
 
 # Custom defines: CMakeFiles/sherry.dir/sherry/http/httpclient_parser.rl.cc.o_DEFINES = __FILE__="sherry/http/httpclient_parser.rl.cc"
 
+# Custom defines: CMakeFiles/sherry.dir/sherry/http/http_session.cc.o_DEFINES = __FILE__="sherry/http/http_session.cc"
+
+# Custom defines: CMakeFiles/sherry.dir/sherry/http/http_server.cc.o_DEFINES = __FILE__="sherry/http/http_server.cc"
+
+# Custom defines: CMakeFiles/sherry.dir/sherry/http/servlet.cc.o_DEFINES = __FILE__="sherry/http/servlet.cc"
+
 # Custom defines: CMakeFiles/sherry.dir/sherry/scheduler.cc.o_DEFINES = __FILE__="sherry/scheduler.cc"
 
 # Custom defines: CMakeFiles/sherry.dir/sherry/socket.cc.o_DEFINES = __FILE__="sherry/socket.cc"

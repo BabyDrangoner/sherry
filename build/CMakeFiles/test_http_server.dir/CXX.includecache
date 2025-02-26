@@ -84,12 +84,6 @@ sys/types.h
 http11_common.h
 /home/xxl/sherry/sherry/http/http11_common.h
 
-/home/xxl/sherry/sherry/http/http_server.cc
-http_server.h
-/home/xxl/sherry/sherry/http/http_server.h
-../log.h
-/home/xxl/sherry/sherry/log.h
-
 /home/xxl/sherry/sherry/http/http_server.h
 ../tcp_server.h
 /home/xxl/sherry/sherry/tcp_server.h
@@ -257,4 +251,10 @@ vector
 -
 string
 -
+
+/home/xxl/sherry/tests/test_http_server.cc
+../sherry/http/http_server.h
+/home/xxl/sherry/sherry/http/http_server.h
+../sherry/log.h
+/home/xxl/sherry/sherry/log.h
 

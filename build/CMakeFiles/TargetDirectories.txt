@@ -8,6 +8,7 @@
 /home/xxl/sherry/build/CMakeFiles/rebuild_cache.dir
 /home/xxl/sherry/build/CMakeFiles/test_socket.dir
 /home/xxl/sherry/build/CMakeFiles/test_thread.dir
+/home/xxl/sherry/build/CMakeFiles/test_http_server.dir
 /home/xxl/sherry/build/CMakeFiles/echo_server.dir
 /home/xxl/sherry/build/CMakeFiles/test_util.dir
 /home/xxl/sherry/build/CMakeFiles/test_config.dir
