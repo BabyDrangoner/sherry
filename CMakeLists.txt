@@ -21,9 +21,13 @@ set(LIB_SRC
     sherry/fiber.cc
     sherry/util.cc
     sherry/hook.cc
+    sherry/http/http_connection.cc
     sherry/http/http11_parser.rl.cc
     sherry/http/http_parser.cc
     sherry/http/httpclient_parser.rl.cc
+    sherry/http/http_session.cc
+    sherry/http/http_server.cc
+    sherry/http/servlet.cc
     sherry/scheduler.cc
     sherry/socket.cc
     sherry/socket_stream.cc
@@ -129,6 +133,16 @@ add_executable(echo_server examples/echo_server.cc)
 add_dependencies(echo_server sherry)
 force_redefine_file_macro_for_sources(echo_server)  #__FILE__
 target_link_libraries(echo_server ${LIBS})
+
+add_executable(test_http_server tests/test_http_server.cc)
+add_dependencies(test_http_server sherry)
+force_redefine_file_macro_for_sources(test_http_server)  #__FILE__
+target_link_libraries(test_http_server ${LIBS})
+
+add_executable(test_http_connection tests/test_http_connection.cc)
+add_dependencies(test_http_connection sherry)
+force_redefine_file_macro_for_sources(test_http_connection)  #__FILE__
+target_link_libraries(test_http_connection ${LIBS})
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)

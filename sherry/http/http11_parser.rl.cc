@@ -54,7 +54,7 @@
 
 /** Data **/
 
-#line 58 "http11_parser.cc"
+#line 58 "http11_parser.rl.cc"
 static const int http_parser_start = 1;
 static const int http_parser_first_final = 348;
 static const int http_parser_error = 0;
@@ -67,7 +67,7 @@ static const int http_parser_en_main = 1;
 int http_parser_init(http_parser *parser) {
   int cs = 0;
   
-#line 71 "http11_parser.cc"
+#line 71 "http11_parser.rl.cc"
 	{
 	cs = http_parser_start;
 	}
@@ -93,7 +93,7 @@ size_t http_parser_execute(http_parser *parser, const char *buffer, size_t len, 
   if(len == 0) return 0;
   parser->nread = 0;
   parser->mark = 0;
-  parser->field_len = 0;
+  parser->field_len = len;
   parser->field_start = 0;
  
   const char *p, *pe;
@@ -107,7 +107,7 @@ size_t http_parser_execute(http_parser *parser, const char *buffer, size_t len, 
   assert(pe - p == (int)len - (int)off && "pointers aren't same distance");
 
   
-#line 111 "http11_parser.cc"
+#line 111 "http11_parser.rl.cc"
 	{
 	short _widec;
 	if ( p == pe )
@@ -136,7 +136,7 @@ st2:
 	if ( ++p == pe )
 		goto _test_eof2;
 case 2:
-#line 140 "http11_parser.cc"
+#line 140 "http11_parser.rl.cc"
 	if ( (*p) == 32 )
 		goto tr4;
 	if ( (*p) > 57 ) {
@@ -156,7 +156,7 @@ st3:
 	if ( ++p == pe )
 		goto _test_eof3;
 case 3:
-#line 160 "http11_parser.cc"
+#line 160 "http11_parser.rl.cc"
 	_widec = (*p);
 	if ( (*p) < 123 ) {
 		if ( 94 <= (*p) && (*p) <= 94 ) {
@@ -275,7 +275,7 @@ st4:
 	if ( ++p == pe )
 		goto _test_eof4;
 case 4:
-#line 279 "http11_parser.cc"
+#line 279 "http11_parser.rl.cc"
 	if ( (*p) == 72 )
 		goto tr13;
 	goto st0;
@@ -287,7 +287,7 @@ st5:
 	if ( ++p == pe )
 		goto _test_eof5;
 case 5:
-#line 291 "http11_parser.cc"
+#line 291 "http11_parser.rl.cc"
 	if ( (*p) == 84 )
 		goto st6;
 	goto st0;
@@ -371,7 +371,7 @@ st13:
 	if ( ++p == pe )
 		goto _test_eof13;
 case 13:
-#line 375 "http11_parser.cc"
+#line 375 "http11_parser.rl.cc"
 	switch( (*p) ) {
 		case 10: goto tr24;
 		case 13: goto tr25;
@@ -411,7 +411,7 @@ st14:
 	if ( ++p == pe )
 		goto _test_eof14;
 case 14:
-#line 415 "http11_parser.cc"
+#line 415 "http11_parser.rl.cc"
 	switch( (*p) ) {
 		case 33: goto st14;
 		case 58: goto tr27;
@@ -456,7 +456,7 @@ st15:
 	if ( ++p == pe )
 		goto _test_eof15;
 case 15:
-#line 460 "http11_parser.cc"
+#line 460 "http11_parser.rl.cc"
 	switch( (*p) ) {
 		case 0: goto st0;
 		case 9: goto tr29;
@@ -474,7 +474,7 @@ st16:
 	if ( ++p == pe )
 		goto _test_eof16;
 case 16:
-#line 478 "http11_parser.cc"
+#line 478 "http11_parser.rl.cc"
 	switch( (*p) ) {
 		case 0: goto st0;
 		case 10: goto tr33;
@@ -511,7 +511,7 @@ st17:
 	if ( ++p == pe )
 		goto _test_eof17;
 case 17:
-#line 515 "http11_parser.cc"
+#line 515 "http11_parser.rl.cc"
 	if ( (*p) == 10 )
 		goto st13;
 	goto st0;
@@ -555,7 +555,7 @@ st348:
 	if ( ++p == pe )
 		goto _test_eof348;
 case 348:
-#line 559 "http11_parser.cc"
+#line 559 "http11_parser.rl.cc"
 	switch( (*p) ) {
 		case 33: goto st14;
 		case 58: goto tr27;
@@ -594,7 +594,7 @@ st18:
 	if ( ++p == pe )
 		goto _test_eof18;
 case 18:
-#line 598 "http11_parser.cc"
+#line 598 "http11_parser.rl.cc"
 	switch( (*p) ) {
 		case 10: goto tr36;
 		case 33: goto st14;
@@ -634,7 +634,7 @@ st19:
 	if ( ++p == pe )
 		goto _test_eof19;
 case 19:
-#line 638 "http11_parser.cc"
+#line 638 "http11_parser.rl.cc"
 	_widec = (*p);
 	if ( (*p) < 123 ) {
 		if ( 94 <= (*p) && (*p) <= 94 ) {
@@ -736,7 +736,7 @@ st20:
 	if ( ++p == pe )
 		goto _test_eof20;
 case 20:
-#line 740 "http11_parser.cc"
+#line 740 "http11_parser.rl.cc"
 	_widec = (*p);
 	if ( (*p) < 123 ) {
 		if ( 94 <= (*p) && (*p) <= 94 ) {
@@ -789,7 +789,7 @@ st21:
 	if ( ++p == pe )
 		goto _test_eof21;
 case 21:
-#line 793 "http11_parser.cc"
+#line 793 "http11_parser.rl.cc"
 	_widec = (*p);
 	if ( (*p) < 123 ) {
 		if ( 94 <= (*p) && (*p) <= 94 ) {
@@ -842,7 +842,7 @@ st22:
 	if ( ++p == pe )
 		goto _test_eof22;
 case 22:
-#line 846 "http11_parser.cc"
+#line 846 "http11_parser.rl.cc"
 	if ( (*p) < 65 ) {
 		if ( 48 <= (*p) && (*p) <= 57 )
 			goto st23;
@@ -873,7 +873,7 @@ st24:
 	if ( ++p == pe )
 		goto _test_eof24;
 case 24:
-#line 877 "http11_parser.cc"
+#line 877 "http11_parser.rl.cc"
 	if ( (*p) < 65 ) {
 		if ( 48 <= (*p) && (*p) <= 57 )
 			goto st25;
@@ -904,7 +904,7 @@ st26:
 	if ( ++p == pe )
 		goto _test_eof26;
 case 26:
-#line 908 "http11_parser.cc"
+#line 908 "http11_parser.rl.cc"
 	_widec = (*p);
 	if ( (*p) < 123 ) {
 		if ( 94 <= (*p) && (*p) <= 94 ) {
@@ -959,7 +959,7 @@ st27:
 	if ( ++p == pe )
 		goto _test_eof27;
 case 27:
-#line 963 "http11_parser.cc"
+#line 963 "http11_parser.rl.cc"
 	if ( (*p) < 65 ) {
 		if ( 48 <= (*p) && (*p) <= 57 )
 			goto st28;
@@ -1002,7 +1002,7 @@ st29:
 	if ( ++p == pe )
 		goto _test_eof29;
 case 29:
-#line 1006 "http11_parser.cc"
+#line 1006 "http11_parser.rl.cc"
 	_widec = (*p);
 	if ( (*p) < 123 ) {
 		if ( 94 <= (*p) && (*p) <= 94 ) {
@@ -1056,7 +1056,7 @@ st30:
 	if ( ++p == pe )
 		goto _test_eof30;
 case 30:
-#line 1060 "http11_parser.cc"
+#line 1060 "http11_parser.rl.cc"
 	_widec = (*p);
 	if ( (*p) < 123 ) {
 		if ( 94 <= (*p) && (*p) <= 94 ) {
@@ -1110,7 +1110,7 @@ st31:
 	if ( ++p == pe )
 		goto _test_eof31;
 case 31:
-#line 1114 "http11_parser.cc"
+#line 1114 "http11_parser.rl.cc"
 	if ( (*p) < 65 ) {
 		if ( 48 <= (*p) && (*p) <= 57 )
 			goto st32;
@@ -1141,7 +1141,7 @@ st33:
 	if ( ++p == pe )
 		goto _test_eof33;
 case 33:
-#line 1145 "http11_parser.cc"
+#line 1145 "http11_parser.rl.cc"
 	_widec = (*p);
 	if ( (*p) < 123 ) {
 		if ( 94 <= (*p) && (*p) <= 94 ) {
@@ -3392,7 +3392,7 @@ st173:
 	if ( ++p == pe )
 		goto _test_eof173;
 case 173:
-#line 3396 "http11_parser.cc"
+#line 3396 "http11_parser.rl.cc"
 	_widec = (*p);
 	if ( (*p) < 123 ) {
 		if ( 94 <= (*p) && (*p) <= 94 ) {
@@ -3726,7 +3726,7 @@ st194:
 	if ( ++p == pe )
 		goto _test_eof194;
 case 194:
-#line 3730 "http11_parser.cc"
+#line 3730 "http11_parser.rl.cc"
 	if ( (*p) < 48 ) {
 		if ( 45 <= (*p) && (*p) <= 46 )
 			goto st195;
@@ -3771,7 +3771,7 @@ st196:
 	if ( ++p == pe )
 		goto _test_eof196;
 case 196:
-#line 3775 "http11_parser.cc"
+#line 3775 "http11_parser.rl.cc"
 	if ( (*p) == 62 )
 		goto st197;
 	goto st196;
@@ -3830,7 +3830,7 @@ st349:
 	if ( ++p == pe )
 		goto _test_eof349;
 case 349:
-#line 3834 "http11_parser.cc"
+#line 3834 "http11_parser.rl.cc"
 	goto st0;
 tr3:
 #line 53 "http11_parser.rl"
@@ -3840,7 +3840,7 @@ st198:
 	if ( ++p == pe )
 		goto _test_eof198;
 case 198:
-#line 3844 "http11_parser.cc"
+#line 3844 "http11_parser.rl.cc"
 	_widec = (*p);
 	if ( (*p) < 123 ) {
 		if ( 94 <= (*p) && (*p) <= 94 ) {
@@ -3895,7 +3895,7 @@ st199:
 	if ( ++p == pe )
 		goto _test_eof199;
 case 199:
-#line 3899 "http11_parser.cc"
+#line 3899 "http11_parser.rl.cc"
 	if ( (*p) == 123 )
 		goto tr232;
 	goto st0;
@@ -3907,7 +3907,7 @@ st200:
 	if ( ++p == pe )
 		goto _test_eof200;
 case 200:
-#line 3911 "http11_parser.cc"
+#line 3911 "http11_parser.rl.cc"
 	if ( (*p) == 125 )
 		goto st201;
 	goto st200;

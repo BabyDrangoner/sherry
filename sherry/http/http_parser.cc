@@ -11,26 +11,64 @@ static sherry::ConfigVar<uint64_t>::ptr g_http_request_buffer_size =
                             , (uint64_t)(4 * 1024), "http request buffer size");
 
 static sherry::ConfigVar<uint64_t>::ptr g_http_request_max_body_size = 
-    sherry::Config::Lookup("http.response.buffer.size"
+    sherry::Config::Lookup("http.request.buffer.size"
                             , (uint64_t)(64 * 1024 * 1024), "http request max body size");
+
+static sherry::ConfigVar<uint64_t>::ptr g_http_response_buffer_size = 
+    sherry::Config::Lookup("http.response.buffer.size"
+                        , (uint64_t)(4 * 1024), "http response buffer size");
+
+static sherry::ConfigVar<uint64_t>::ptr g_http_response_max_body_size = 
+    sherry::Config::Lookup("http.response.buffer.size"
+                        , (uint64_t)(64 * 1024 * 1024), "http response max body size");
 
 static uint64_t s_http_request_buffer_size = 0;
 static uint64_t s_http_request_max_body_size = 0;
+static uint64_t s_http_response_buffer_size = 0;
+static uint64_t s_http_response_max_body_size = 0;
 
+uint64_t HttpRequestParser::GetHttpRequestBufferSize(){
+    return s_http_request_buffer_size;
+}
+
+uint64_t HttpRequestParser::GetHttpRequestMaxBodySize(){
+    return s_http_request_max_body_size;
+}
+
+uint64_t HttpResponseParser::GetHttpResponseBufferSize(){
+    return s_http_response_buffer_size;
+}
+
+uint64_t HttpResponseParser::GetHttpResponseMaxBodySize(){
+    return s_http_response_max_body_size;
+}
+
+namespace {
+    
 struct _RequestSizeIniter{
     _RequestSizeIniter() {
         s_http_request_buffer_size = g_http_request_buffer_size->getValue();
         s_http_request_max_body_size = g_http_request_max_body_size->getValue();
+        s_http_response_buffer_size = g_http_response_buffer_size->getValue();
+        s_http_response_max_body_size = g_http_response_max_body_size->getValue();
         g_http_request_buffer_size->addListener([](const int& ov, const int& nv){
             s_http_request_buffer_size = nv;
         });
         g_http_request_max_body_size->addListener([](const int& ov, const int& nv){
             s_http_request_max_body_size = nv;
         });
+        g_http_response_buffer_size->addListener([](const int& ov, const int& nv){
+            s_http_response_buffer_size = nv;
+        });
+        g_http_response_max_body_size->addListener([](const int& ov, const int& nv){
+            s_http_response_max_body_size = nv;
+        });
     }
 };
 
 static _RequestSizeIniter _init;
+
+}
 
 void on_request_method(void *data, const char *at, size_t length) {
     HttpRequestParser* parser = static_cast<HttpRequestParser*>(data);
@@ -171,7 +209,7 @@ void on_response_http_field(void *data, const char *field, size_t flen
     HttpResponseParser* parser = static_cast<HttpResponseParser*>(data);
     if(flen == 0) {
         SYLAR_LOG_WARN(g_logger) << "invalid http response field length == 0";
-        parser->setError(1002);
+        // parser->setError(1002);
         return;
     }
     parser->getData()->setHeader(std::string(field, flen)
@@ -179,7 +217,8 @@ void on_response_http_field(void *data, const char *field, size_t flen
 }
 
 
-HttpResponseParser::HttpResponseParser(){
+HttpResponseParser::HttpResponseParser()
+    :m_error(0){
     m_data.reset(new sherry::http::HttpResponse);
     httpclient_parser_init(&m_parser);
     m_parser.reason_phrase = on_response_reason;
@@ -190,6 +229,7 @@ HttpResponseParser::HttpResponseParser(){
     m_parser.http_field = on_response_http_field;
     m_parser.last_chunk = on_response_last_chunk;
     m_parser.data = this;
+    
 }
 
 // 1：成功
@@ -212,7 +252,6 @@ int HttpResponseParser::hasError(){
 uint64_t HttpResponseParser::getContentLength(){
     return m_data->getHeaderAs<uint64_t>("content-length", 0);
 }
-
 
 }
 

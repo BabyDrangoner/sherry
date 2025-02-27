@@ -1,5 +1,5 @@
 #ifndef __SYLAR_SOCKET_H__
-#define __SYLAA_SOCKET_H__
+#define __SYLAR_SOCKET_H__
 
 #include <memory>
 #include "address.h"
