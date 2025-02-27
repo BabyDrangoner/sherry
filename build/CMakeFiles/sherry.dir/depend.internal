@@ -72,6 +72,25 @@ CMakeFiles/sherry.dir/sherry/http/http11_parser.rl.cc.o
  /home/xxl/sherry/sherry/http/http11_common.h
  /home/xxl/sherry/sherry/http/http11_parser.h
  /home/xxl/sherry/sherry/http/http11_parser.rl.cc
+CMakeFiles/sherry.dir/sherry/http/http_connection.cc.o
+ /home/xxl/sherry/sherry/address.h
+ /home/xxl/sherry/sherry/bytearray.h
+ /home/xxl/sherry/sherry/fiber.h
+ /home/xxl/sherry/sherry/http/http.h
+ /home/xxl/sherry/sherry/http/http11_common.h
+ /home/xxl/sherry/sherry/http/http11_parser.h
+ /home/xxl/sherry/sherry/http/http_connection.cc
+ /home/xxl/sherry/sherry/http/http_connection.h
+ /home/xxl/sherry/sherry/http/http_parser.h
+ /home/xxl/sherry/sherry/http/httpclient_parser.h
+ /home/xxl/sherry/sherry/iomanager.h
+ /home/xxl/sherry/sherry/noncopyable.h
+ /home/xxl/sherry/sherry/scheduler.h
+ /home/xxl/sherry/sherry/socket.h
+ /home/xxl/sherry/sherry/socket_stream.h
+ /home/xxl/sherry/sherry/stream.h
+ /home/xxl/sherry/sherry/thread.h
+ /home/xxl/sherry/sherry/timer.h
 CMakeFiles/sherry.dir/sherry/http/http_parser.cc.o
  /home/xxl/sherry/sherry/config.h
  /home/xxl/sherry/sherry/http/http.h

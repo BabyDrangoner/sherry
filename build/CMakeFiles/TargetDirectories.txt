@@ -14,6 +14,7 @@
 /home/xxl/sherry/build/CMakeFiles/test_config.dir
 /home/xxl/sherry/build/CMakeFiles/test_hook.dir
 /home/xxl/sherry/build/CMakeFiles/test_fiber.dir
+/home/xxl/sherry/build/CMakeFiles/test_http_connection.dir
 /home/xxl/sherry/build/CMakeFiles/test_scheduler.dir
 /home/xxl/sherry/build/CMakeFiles/test_iomanager.dir
 /home/xxl/sherry/build/CMakeFiles/test_address.dir

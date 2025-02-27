@@ -24,6 +24,8 @@ CXX_INCLUDES = -I/home/xxl/sherry/. -I/build/yaml-cpp-0.8.0/include
 
 # Custom defines: CMakeFiles/sherry.dir/sherry/hook.cc.o_DEFINES = __FILE__="sherry/hook.cc"
 
+# Custom defines: CMakeFiles/sherry.dir/sherry/http/http_connection.cc.o_DEFINES = __FILE__="sherry/http/http_connection.cc"
+
 # Custom defines: CMakeFiles/sherry.dir/sherry/http/http11_parser.rl.cc.o_DEFINES = __FILE__="sherry/http/http11_parser.rl.cc"
 
 # Custom defines: CMakeFiles/sherry.dir/sherry/http/http_parser.cc.o_DEFINES = __FILE__="sherry/http/http_parser.cc"

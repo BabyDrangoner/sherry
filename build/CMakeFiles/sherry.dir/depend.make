@@ -72,6 +72,25 @@ CMakeFiles/sherry.dir/sherry/http/http11_parser.rl.cc.o: ../sherry/http/http11_c
 CMakeFiles/sherry.dir/sherry/http/http11_parser.rl.cc.o: ../sherry/http/http11_parser.h
 CMakeFiles/sherry.dir/sherry/http/http11_parser.rl.cc.o: ../sherry/http/http11_parser.rl.cc
 
+CMakeFiles/sherry.dir/sherry/http/http_connection.cc.o: ../sherry/address.h
+CMakeFiles/sherry.dir/sherry/http/http_connection.cc.o: ../sherry/bytearray.h
+CMakeFiles/sherry.dir/sherry/http/http_connection.cc.o: ../sherry/fiber.h
+CMakeFiles/sherry.dir/sherry/http/http_connection.cc.o: ../sherry/http/http.h
+CMakeFiles/sherry.dir/sherry/http/http_connection.cc.o: ../sherry/http/http11_common.h
+CMakeFiles/sherry.dir/sherry/http/http_connection.cc.o: ../sherry/http/http11_parser.h
+CMakeFiles/sherry.dir/sherry/http/http_connection.cc.o: ../sherry/http/http_connection.cc
+CMakeFiles/sherry.dir/sherry/http/http_connection.cc.o: ../sherry/http/http_connection.h
+CMakeFiles/sherry.dir/sherry/http/http_connection.cc.o: ../sherry/http/http_parser.h
+CMakeFiles/sherry.dir/sherry/http/http_connection.cc.o: ../sherry/http/httpclient_parser.h
+CMakeFiles/sherry.dir/sherry/http/http_connection.cc.o: ../sherry/iomanager.h
+CMakeFiles/sherry.dir/sherry/http/http_connection.cc.o: ../sherry/noncopyable.h
+CMakeFiles/sherry.dir/sherry/http/http_connection.cc.o: ../sherry/scheduler.h
+CMakeFiles/sherry.dir/sherry/http/http_connection.cc.o: ../sherry/socket.h
+CMakeFiles/sherry.dir/sherry/http/http_connection.cc.o: ../sherry/socket_stream.h
+CMakeFiles/sherry.dir/sherry/http/http_connection.cc.o: ../sherry/stream.h
+CMakeFiles/sherry.dir/sherry/http/http_connection.cc.o: ../sherry/thread.h
+CMakeFiles/sherry.dir/sherry/http/http_connection.cc.o: ../sherry/timer.h
+
 CMakeFiles/sherry.dir/sherry/http/http_parser.cc.o: ../sherry/config.h
 CMakeFiles/sherry.dir/sherry/http/http_parser.cc.o: ../sherry/http/http.h
 CMakeFiles/sherry.dir/sherry/http/http_parser.cc.o: ../sherry/http/http11_common.h

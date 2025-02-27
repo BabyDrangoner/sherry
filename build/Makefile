@@ -296,6 +296,19 @@ test_fiber/fast:
 .PHONY : test_fiber/fast
 
 #=============================================================================
+# Target rules for targets named test_http_connection
+
+# Build rule for target.
+test_http_connection: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_http_connection
+.PHONY : test_http_connection
+
+# fast build rule for target.
+test_http_connection/fast:
+	$(MAKE) -f CMakeFiles/test_http_connection.dir/build.make CMakeFiles/test_http_connection.dir/build
+.PHONY : test_http_connection/fast
+
+#=============================================================================
 # Target rules for targets named test_scheduler
 
 # Build rule for target.
@@ -576,6 +589,33 @@ sherry/http/http11_parser.rl.s: sherry/http/http11_parser.rl.cc.s
 sherry/http/http11_parser.rl.cc.s:
 	$(MAKE) -f CMakeFiles/sherry.dir/build.make CMakeFiles/sherry.dir/sherry/http/http11_parser.rl.cc.s
 .PHONY : sherry/http/http11_parser.rl.cc.s
+
+sherry/http/http_connection.o: sherry/http/http_connection.cc.o
+
+.PHONY : sherry/http/http_connection.o
+
+# target to build an object file
+sherry/http/http_connection.cc.o:
+	$(MAKE) -f CMakeFiles/sherry.dir/build.make CMakeFiles/sherry.dir/sherry/http/http_connection.cc.o
+.PHONY : sherry/http/http_connection.cc.o
+
+sherry/http/http_connection.i: sherry/http/http_connection.cc.i
+
+.PHONY : sherry/http/http_connection.i
+
+# target to preprocess a source file
+sherry/http/http_connection.cc.i:
+	$(MAKE) -f CMakeFiles/sherry.dir/build.make CMakeFiles/sherry.dir/sherry/http/http_connection.cc.i
+.PHONY : sherry/http/http_connection.cc.i
+
+sherry/http/http_connection.s: sherry/http/http_connection.cc.s
+
+.PHONY : sherry/http/http_connection.s
+
+# target to generate assembly for a file
+sherry/http/http_connection.cc.s:
+	$(MAKE) -f CMakeFiles/sherry.dir/build.make CMakeFiles/sherry.dir/sherry/http/http_connection.cc.s
+.PHONY : sherry/http/http_connection.cc.s
 
 sherry/http/http_parser.o: sherry/http/http_parser.cc.o
 
@@ -1171,6 +1211,33 @@ tests/test_http.cc.s:
 	$(MAKE) -f CMakeFiles/test_http.dir/build.make CMakeFiles/test_http.dir/tests/test_http.cc.s
 .PHONY : tests/test_http.cc.s
 
+tests/test_http_connection.o: tests/test_http_connection.cc.o
+
+.PHONY : tests/test_http_connection.o
+
+# target to build an object file
+tests/test_http_connection.cc.o:
+	$(MAKE) -f CMakeFiles/test_http_connection.dir/build.make CMakeFiles/test_http_connection.dir/tests/test_http_connection.cc.o
+.PHONY : tests/test_http_connection.cc.o
+
+tests/test_http_connection.i: tests/test_http_connection.cc.i
+
+.PHONY : tests/test_http_connection.i
+
+# target to preprocess a source file
+tests/test_http_connection.cc.i:
+	$(MAKE) -f CMakeFiles/test_http_connection.dir/build.make CMakeFiles/test_http_connection.dir/tests/test_http_connection.cc.i
+.PHONY : tests/test_http_connection.cc.i
+
+tests/test_http_connection.s: tests/test_http_connection.cc.s
+
+.PHONY : tests/test_http_connection.s
+
+# target to generate assembly for a file
+tests/test_http_connection.cc.s:
+	$(MAKE) -f CMakeFiles/test_http_connection.dir/build.make CMakeFiles/test_http_connection.dir/tests/test_http_connection.cc.s
+.PHONY : tests/test_http_connection.cc.s
+
 tests/test_http_server.o: tests/test_http_server.cc.o
 
 .PHONY : tests/test_http_server.o
@@ -1409,6 +1476,7 @@ help:
 	@echo "... test_config"
 	@echo "... test_hook"
 	@echo "... test_fiber"
+	@echo "... test_http_connection"
 	@echo "... test_scheduler"
 	@echo "... test_iomanager"
 	@echo "... test_address"
@@ -1439,6 +1507,9 @@ help:
 	@echo "... sherry/http/http11_parser.rl.o"
 	@echo "... sherry/http/http11_parser.rl.i"
 	@echo "... sherry/http/http11_parser.rl.s"
+	@echo "... sherry/http/http_connection.o"
+	@echo "... sherry/http/http_connection.i"
+	@echo "... sherry/http/http_connection.s"
 	@echo "... sherry/http/http_parser.o"
 	@echo "... sherry/http/http_parser.i"
 	@echo "... sherry/http/http_parser.s"
@@ -1505,6 +1576,9 @@ help:
 	@echo "... tests/test_http.o"
 	@echo "... tests/test_http.i"
 	@echo "... tests/test_http.s"
+	@echo "... tests/test_http_connection.o"
+	@echo "... tests/test_http_connection.i"
+	@echo "... tests/test_http_connection.s"
 	@echo "... tests/test_http_server.o"
 	@echo "... tests/test_http_server.i"
 	@echo "... tests/test_http_server.s"

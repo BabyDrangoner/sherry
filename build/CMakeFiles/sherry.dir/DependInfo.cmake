@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/xxl/sherry/sherry/hook.cc" "/home/xxl/sherry/build/CMakeFiles/sherry.dir/sherry/hook.cc.o"
   "/home/xxl/sherry/sherry/http/http.cc" "/home/xxl/sherry/build/CMakeFiles/sherry.dir/sherry/http/http.cc.o"
   "/home/xxl/sherry/sherry/http/http11_parser.rl.cc" "/home/xxl/sherry/build/CMakeFiles/sherry.dir/sherry/http/http11_parser.rl.cc.o"
+  "/home/xxl/sherry/sherry/http/http_connection.cc" "/home/xxl/sherry/build/CMakeFiles/sherry.dir/sherry/http/http_connection.cc.o"
   "/home/xxl/sherry/sherry/http/http_parser.cc" "/home/xxl/sherry/build/CMakeFiles/sherry.dir/sherry/http/http_parser.cc.o"
   "/home/xxl/sherry/sherry/http/http_server.cc" "/home/xxl/sherry/build/CMakeFiles/sherry.dir/sherry/http/http_server.cc.o"
   "/home/xxl/sherry/sherry/http/http_session.cc" "/home/xxl/sherry/build/CMakeFiles/sherry.dir/sherry/http/http_session.cc.o"
